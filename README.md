@@ -36,7 +36,7 @@
 - [ ] Notes App
 - [ ] BMI Calculator
 - [ ] Calculator
-- [ ] Digital Clock
+- [x] [Digital Clock](https://proffesorghost.github.io/d-js-clock/) :tada:
 - [ ] Weight Converter
 - [ ] Temperature Converter
 - [ ] Running Game
