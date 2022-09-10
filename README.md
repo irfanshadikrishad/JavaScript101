@@ -1,6 +1,6 @@
 # 100DaysofJavaScript
 
-- [ ] Counter App
+- [x] [Counter App](https://proffesorghost.github.io/counterapp/) :tada:
 - [ ] Random Hex Color Generator
 - [ ] Random Number Generator
 - [ ] Modal/Popup
