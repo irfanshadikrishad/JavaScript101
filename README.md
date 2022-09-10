@@ -34,7 +34,7 @@
 - [ ] Simple ToDo App
 - [ ] Todo App with Local Storage
 - [ ] Notes App
-- [ ] BMI Calculator
+- [x] [BMI Calculator](https://proffesorghost.github.io/bmi-calculator/) :tada:
 - [ ] Calculator
 - [x] [Digital Clock](https://proffesorghost.github.io/d-js-clock/) :tada:
 - [ ] Weight Converter
