@@ -51,7 +51,7 @@
 - [ ] Data Attribute and JS
 - [ ] Product Filter
 - [ ] Product Carousel Slider
-- [ ] - [ ] Vertical Tabs
+- [ ] Vertical Tabs
 - [ ] Count Up App
 - [ ] Digital Piano
 - [ ] Form Validation
