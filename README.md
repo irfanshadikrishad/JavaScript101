@@ -6,7 +6,7 @@
 - [ ] Modal/Popup
 - [ ] Palindrome Checker
 - [ ] Vowel Counter App
-- [ ] Click to Copy
+- [x] [Click to Copy](https://proffesorghost.github.io/click-to-copy/) :tada:
 - [ ] Google Drive Download Link Generator
 - [ ] Weather App
 - [ ] Input Field Character Counter
