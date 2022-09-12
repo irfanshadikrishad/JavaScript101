@@ -9,7 +9,7 @@
 - [x] [Click to Copy](https://proffesorghost.github.io/click-to-copy/) :tada:
 - [ ] Google Drive Download Link Generator
 - [ ] Weather App
-- [ ] Input Field Character Counter
+- [x] [Input Field Character Counter](https://proffesorghost.github.io/char-counter/) :tada:
 - [ ] Lyrics Search App
 - [ ] Internet Connection Status Detector
 - [ ] Quiz App
