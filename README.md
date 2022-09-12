@@ -2,7 +2,7 @@
 
 - [x] [Counter App](https://proffesorghost.github.io/counterapp/) :tada:
 - [ ] Random Hex Color Generator
-- [ ] Random Number Generator
+- [x] [Random Number Generator](https://proffesorghost.github.io/randomnumbergenerator/) :tada:
 - [ ] Modal/Popup
 - [ ] Palindrome Checker
 - [ ] Vowel Counter App
