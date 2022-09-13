@@ -23,7 +23,7 @@
 - [ ] Smooth Scroll Effect
 - [ ] Sticky Nav Bar on Scroll
 - [ ] Active Menu Switcher
-- [ ] Scroll To Top
+- [x] [Scroll To Top](https://proffesorghost.github.io/scrolltotop/) :tada:
 - [ ] Responsive Mobile Menu – part 1 & 2
 - [ ] Responsive Mobile Menu with Submenu
 - [ ] Page Scroll Indicator
