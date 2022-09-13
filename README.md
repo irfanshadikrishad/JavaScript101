@@ -1,7 +1,7 @@
 # 100DaysofJavaScript
 
 - [x] [Counter App](https://proffesorghost.github.io/counterapp/) :tada:
-- [ ] Random Hex Color Generator
+- [x] [Random Hex Color Generator](https://proffesorghost.github.io/randomhexcolorgenerator/) :tada:
 - [x] [Random Number Generator](https://proffesorghost.github.io/randomnumbergenerator/) :tada:
 - [ ] Modal/Popup
 - [ ] Palindrome Checker
