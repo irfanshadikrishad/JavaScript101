@@ -40,7 +40,7 @@
 - [ ] Weight Converter
 - [ ] Temperature Converter
 - [ ] Running Game
-- [ ] Word Count Tool
+- [x] [Word Count Tool](https://proffesorghost.github.io/word-counter-tool/) :tada:
 - [ ] Accordion
 - [ ] Async Await – Random Joke Generator
 - [ ] Modules, Imports and Exports
