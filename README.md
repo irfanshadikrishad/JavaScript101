@@ -74,7 +74,7 @@
 - [ ] Custom Confirm Dialog Box (ES6 Classes)
 - [ ] Custom Range Slider
 - [ ] Modal With Countdown Event
-- [ ] Website Preloader
+- [x] [Website Preloader](https://proffesorghost.github.io/preloader/) :tada:
 - [ ] Testimonial Slider
 - [ ] Tweet Character Count
 - [ ] Click to Tweet
