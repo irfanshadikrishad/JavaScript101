@@ -38,7 +38,7 @@
 - [ ] Calculator
 - [x] [Digital Clock](https://proffesorghost.github.io/d-js-clock/) :tada:
 - [ ] Weight Converter
-- [ ] Temperature Converter
+- [x] [Temperature Converter](https://proffesorghost.github.io/temperature-converter/) :tada:
 - [ ] Running Game
 - [x] [Word Count Tool](https://proffesorghost.github.io/word-counter-tool/) :tada:
 - [ ] Accordion
