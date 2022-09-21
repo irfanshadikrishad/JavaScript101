@@ -11,7 +11,7 @@
 - [ ] Weather App
 - [x] [Input Field Character Counter](https://proffesorghost.github.io/char-counter/) :tada:
 - [ ] Lyrics Search App
-- [ ] Internet Connection Status Detector
+- [x] [Internet Connection Status Detector](https://proffesorghost.github.io/internet-connection-status/) :tada:
 - [ ] Quiz App
 - [ ] API Project
 - [ ] HTTP Request Project
