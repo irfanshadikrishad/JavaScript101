@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Download Link Generator</title>
+    <link rel="icon" href="img/drive.png" type="image/x-icon">
+    <!--CSS Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <img src="img/drive.png" alt="" class="icon floating" draggable="false">
+           <h1>Google Drive Direct Download Link Generator</h1>
+        </div>
+        <div class="three-btns">
+            <button onclick="poplink()" id="btn1"><i class="fa-solid fa-link"></i> Google Drive Link</button>
+            <button onclick="popaudio()" id="btn2"><i class="fa-solid fa-file-audio"></i> Audio Embeded Link</button>
+            <button onclick="popvideo()" id="btn3"><i class="fa-solid fa-file-video"></i> Video Embeded Link</button>
+        </div>
+        <div id="lowerpart">
+        <div class="inputtake">
+            <form action="">
+                <i class="fa-brands fa-google-drive"></i>
+                <input id="drive" autocomplete="off" type="text" placeholder="Paste google drive link" required>
+            </form>
+            <button id="generate" onclick="drivegenerate()"><i class="fa-solid fa-gears"></i> Generate</button>
+        </div>
+        <div class="generator">
+            <form action="">
+                <i class="fa-solid fa-link"></i>
+                <input id="copy-input" type="text" placeholder="Direct Link to be copied">
+            </form>
+            <button id="copy" onclick="clickin()"><i class="fa-regular fa-copy"></i>
+                Copy</button>
+        </div>
+        </div>
+        <!--Audio Section-->
+        <div id="lowerpart-audio">
+            <div class="inputtake">
+                <form action="">
+                    <i class="fa-solid fa-headphones"></i>
+                    <input id="audio" autocomplete="off" type="text" placeholder="Paste Audio Embeded Link" required>
+                </form>
+                <button id="generate" onclick="audiogenerate()"><i class="fa-solid fa-gears"></i> Generate</button>
+            </div>
+            <div class="generator">
+                <form action="">
+                    <i class="fa-solid fa-link"></i>
+                    <input id="copy-input-audio" type="text" placeholder="Embeded Link to be copied">
+                </form>
+                <button id="copy-audio" onclick="clickinAudio()"><i class="fa-regular fa-copy"></i>
+                    Copy</button>
+            </div>
+            </div>
+            <div id="lowerpart-video">
+                <div class="inputtake">
+                    <form action="">
+                        <i class="fa-solid fa-video"></i>
+                        <input  id="video" autocomplete="off" type="text" placeholder="Paste Video Sharing Link" required>
+                    </form>
+                    <button id="generate" onclick="videogenerate()"><i class="fa-solid fa-gears"></i> Generate</button>
+                </div>
+                <div class="generator">
+                    <form action="">
+                        <i class="fa-solid fa-link"></i>
+                        <input id="copy-input-video" type="text" placeholder="Embeded Link to be copied">
+                    </form>
+                    <button id="copy-video" onclick="clickinVideo()"><i class="fa-regular fa-copy"></i>
+                        Copy</button>
+                </div>
+                </div>
+                <div class="thecredit">
+                    <a href="https://github.com/irfanshadikofficial/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://facebook.com/irfanshadikofficial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCyv-8tjvvMctkIlljjw9Gfg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/irfanshadikofficial/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/irfanshadikoffi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+    </div>
+<!--JS Linking-->
+<script src="script.js"></script>
+</body>
+</html>
