@@ -63,7 +63,7 @@
 - [ ] Currency Converter
 - [ ] Movie Listing App
 - [ ] Floating Action Button
-- [ ] Dark and Light Mode Toggler
+- [x] [Dark and Light Mode Toggler](https://proffesorghost.github.io/darkandlightmodetoggler/) :tada:
 - [ ] Web Speech API – Speech To Text App
 - [ ] Web Speech API – Speech To Text App – With Voice Command
 - [ ] Speech Synthesis – Text To Speech App
