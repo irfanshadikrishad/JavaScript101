@@ -4,7 +4,7 @@
 - [x] [Random Hex Color Generator](https://proffesorghost.github.io/randomhexcolorgenerator/) :tada:
 - [x] [Random Number Generator](https://proffesorghost.github.io/randomnumbergenerator/) :tada:
 - [ ] Modal/Popup
-- [ ] Palindrome Checker
+- [x] [Palindrome Checker](https://proffesorghost.github.io/palindromechecker/) :tada:
 - [x] [Vowel Counter App](https://proffesorghost.github.io/vowelcounter/) :tada:
 - [x] [Click to Copy](https://proffesorghost.github.io/click-to-copy/) :tada:
 - [x] [Google Drive Download Link Generator](https://proffesorghost.github.io/googledirectdownloadgenerator/) :tada:
