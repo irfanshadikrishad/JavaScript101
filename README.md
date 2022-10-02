@@ -18,7 +18,7 @@
 - [ ] Random Quote Generator
 - [ ] List Search Project
 - [ ] Date Countdown
-- [ ] Time Countdown
+- [x] [Time Countdown](https://proffesorghost.github.io/timecountdown/) :tada:
 - [ ] Tip Calculator
 - [ ] Smooth Scroll Effect
 - [ ] Sticky Nav Bar on Scroll
