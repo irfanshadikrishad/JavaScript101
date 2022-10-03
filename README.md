@@ -67,7 +67,7 @@
 - [ ] Web Speech API – Speech To Text App
 - [ ] Web Speech API – Speech To Text App – With Voice Command
 - [ ] Speech Synthesis – Text To Speech App
-- [ ] Type Writing Effect Project
+- [x] [Type Writing Effect Project](https://proffesorghost.github.io/typewritingeffectproject/) :tada:
 - [ ] Custom Progress Bar
 - [ ] Custom Alert & Toast Notification (ES6 Classes)
 - [ ] Custom Alert & Toast Notification With Progress Bar
