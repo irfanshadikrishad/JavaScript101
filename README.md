@@ -52,7 +52,7 @@
 - [ ] Product Filter
 - [ ] Product Carousel Slider
 - [ ] Vertical Tabs
-- [ ] Count Up App
+- [x] [Count Up App](https://proffesorghost.github.io/countupapp/) :tada:
 - [ ] Digital Piano
 - [ ] Form Validation
 - [ ] Password Visibility Toggle
