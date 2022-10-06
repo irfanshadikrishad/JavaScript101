@@ -44,7 +44,7 @@
 - [ ] Accordion
 - [ ] Async Await – Random Joke Generator
 - [ ] Modules, Imports and Exports
-- [ ] GitHub Profile Search App
+- [x] [GitHub Profile Search App](https://proffesorghost.github.io/githubprofilesearchapp/) :tada:
 - [ ] Wikipedia Search App
 - [ ] Image Slider
 - [ ] JavaScript Array Methods
