@@ -3,7 +3,7 @@
 - [x] [Counter App](https://proffesorghost.github.io/counterapp/) :tada:
 - [x] [Random Hex Color Generator](https://proffesorghost.github.io/randomhexcolorgenerator/) :tada:
 - [x] [Random Number Generator](https://proffesorghost.github.io/randomnumbergenerator/) :tada:
-- [ ] Modal/Popup
+- [x] [Modal/Popup](https://proffesorghost.github.io/modal/) :tada:
 - [x] [Palindrome Checker](https://proffesorghost.github.io/palindromechecker/) :tada:
 - [x] [Vowel Counter App](https://proffesorghost.github.io/vowelcounter/) :tada:
 - [x] [Click to Copy](https://proffesorghost.github.io/click-to-copy/) :tada:
