@@ -8,7 +8,7 @@
 - [x] [Vowel Counter App](https://proffesorghost.github.io/vowelcounter/) :tada:
 - [x] [Click to Copy](https://proffesorghost.github.io/click-to-copy/) :tada:
 - [x] [Google Drive Download Link Generator](https://proffesorghost.github.io/googledirectdownloadgenerator/) :tada:
-- [ ] Weather App
+- [x] [Weather App](https://proffesorghost.github.io/weatherapp/) :tada:
 - [x] [Input Field Character Counter](https://proffesorghost.github.io/char-counter/) :tada:
 - [ ] Lyrics Search App
 - [x] [Internet Connection Status Detector](https://proffesorghost.github.io/internet-connection-status/) :tada:
