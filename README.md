@@ -15,7 +15,7 @@
 - [ ] Quiz App
 - [ ] API Project
 - [ ] HTTP Request Project
-- [ ] Random Quote Generator
+- [x] [Random Quote Generator](https://proffesorghost.github.io/random-quote-generator/) :tada:
 - [ ] List Search Project
 - [ ] Date Countdown
 - [x] [Time Countdown](https://proffesorghost.github.io/timecountdown/) :tada:
