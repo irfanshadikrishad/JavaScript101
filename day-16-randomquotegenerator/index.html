@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link rel="shortcut icon" href="./img/quotations.png" type="image/x-icon" />
+    <!-- CSS LINKING -->
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quotes">
+        <p id="quote">
+          I never see what has been done; I only see what remains to be done.
+        </p>
+        <p id="author">— Marie Curie</p>
+      </div>
+      <div class="buttons">
+        <button id="copy" onclick="copy()">
+          Copy
+          <i class="fa-regular fa-copy"></i>
+        </button>
+        <button id="next">Next</button>
+      </div>
+    </div>
+    <!-- JS LINKING -->
+    <script src="./src/script.js"></script>
+  </body>
+</html>
