@@ -26,9 +26,9 @@
 - [x] [Scroll To Top](https://proffesorghost.github.io/scrolltotop/) :tada:
 - [ ] Responsive Mobile Menu – part 1 & 2
 - [ ] Responsive Mobile Menu with Submenu
-- [ ] Page Scroll Indicator
+- [x] [Page Scroll Indicator](https://proffesorghost.github.io/customScrollIndicator-highlighter/) :tada:
 - [ ] Newsletter Form on Scroll
-- [ ] Page Animation With AOS Library
+- [x] [Page Animation With AOS Library](https://itsamuhaimin.github.io) :tada:
 - [ ] Password Generator
 - [ ] Local Storage
 - [ ] Simple ToDo App
