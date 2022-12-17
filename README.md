@@ -21,7 +21,7 @@
 - [x] [Time Countdown](https://proffesorghost.github.io/timecountdown/) :tada:
 - [ ] Tip Calculator
 - [ ] Smooth Scroll Effect
-- [ ] Sticky Nav Bar on Scroll
+- [x] [Sticky Nav Bar on Scroll](https://itsamuhaimin.github.io) :tada:
 - [ ] Active Menu Switcher
 - [x] [Scroll To Top](https://proffesorghost.github.io/scrolltotop/) :tada:
 - [ ] Responsive Mobile Menu – part 1 & 2
