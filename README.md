@@ -75,7 +75,7 @@
 - [ ] Custom Range Slider
 - [ ] Modal With Countdown Event
 - [x] [Website Preloader](https://proffesorghost.github.io/preloader/) :tada:
-- [ ] Testimonial Slider
+- [x] [Testimonial Slider](https://proffesorghost.github.io/owlcarousel/) :tada:
 - [ ] Tweet Character Count
 - [ ] Click to Tweet
 - [ ] Embed Twitter Timeline
