@@ -1,32 +1,32 @@
 # 100DaysofJavaScript
 
-- [x] [Counter App](https://proffesorghost.github.io/counterapp/) :tada:
-- [x] [Random Hex Color Generator](https://proffesorghost.github.io/randomhexcolorgenerator/) :tada:
-- [x] [Random Number Generator](https://proffesorghost.github.io/randomnumbergenerator/) :tada:
-- [x] [Modal/Popup](https://proffesorghost.github.io/modal/) :tada:
-- [x] [Palindrome Checker](https://proffesorghost.github.io/palindromechecker/) :tada:
-- [x] [Vowel Counter App](https://proffesorghost.github.io/vowelcounter/) :tada:
-- [x] [Click to Copy](https://proffesorghost.github.io/click-to-copy/) :tada:
-- [x] [Google Drive Download Link Generator](https://proffesorghost.github.io/googledirectdownloadgenerator/) :tada:
-- [x] [Weather App](https://proffesorghost.github.io/weatherapp/) :tada:
-- [x] [Input Field Character Counter](https://proffesorghost.github.io/char-counter/) :tada:
+- [x] [Counter App](https://eptsy.github.io/counterapp/) :tada:
+- [x] [Random Hex Color Generator](https://eptsy.github.io/randomhexcolorgenerator/) :tada:
+- [x] [Random Number Generator](https://eptsy.github.io/randomnumbergenerator/) :tada:
+- [x] [Modal/Popup](https://eptsy.github.io/modal/) :tada:
+- [x] [Palindrome Checker](https://eptsy.github.io/palindromechecker/) :tada:
+- [x] [Vowel Counter App](https://eptsy.github.io/vowelcounter/) :tada:
+- [x] [Click to Copy](https://eptsy.github.io/click-to-copy/) :tada:
+- [x] [Google Drive Download Link Generator](https://eptsy.github.io/googledirectdownloadgenerator/) :tada:
+- [x] [Weather App](https://eptsy.github.io/weatherapp/) :tada:
+- [x] [Input Field Character Counter](https://eptsy.github.io/char-counter/) :tada:
 - [ ] Lyrics Search App
-- [x] [Internet Connection Status Detector](https://proffesorghost.github.io/internet-connection-status/) :tada:
+- [x] [Internet Connection Status Detector](https://eptsy.github.io/internet-connection-status/) :tada:
 - [ ] Quiz App
 - [ ] API Project
 - [ ] HTTP Request Project
-- [x] [Random Quote Generator](https://proffesorghost.github.io/random-quote-generator/) :tada:
+- [x] [Random Quote Generator](https://eptsy.github.io/random-quote-generator/) :tada:
 - [ ] List Search Project
 - [ ] Date Countdown
-- [x] [Time Countdown](https://proffesorghost.github.io/timecountdown/) :tada:
+- [x] [Time Countdown](https://eptsy.github.io/timecountdown/) :tada:
 - [ ] Tip Calculator
 - [ ] Smooth Scroll Effect
 - [x] [Sticky Nav Bar on Scroll](https://itsamuhaimin.github.io) :tada:
 - [ ] Active Menu Switcher
-- [x] [Scroll To Top](https://proffesorghost.github.io/scrolltotop/) :tada:
+- [x] [Scroll To Top](https://eptsy.github.io/scrolltotop/) :tada:
 - [ ] Responsive Mobile Menu – part 1 & 2
 - [ ] Responsive Mobile Menu with Submenu
-- [x] [Page Scroll Indicator](https://proffesorghost.github.io/customScrollIndicator-highlighter/) :tada:
+- [x] [Page Scroll Indicator](https://eptsy.github.io/customScrollIndicator-highlighter/) :tada:
 - [ ] Newsletter Form on Scroll
 - [x] [Page Animation With AOS Library](https://itsamuhaimin.github.io) :tada:
 - [ ] Password Generator
@@ -34,17 +34,17 @@
 - [ ] Simple ToDo App
 - [ ] Todo App with Local Storage
 - [ ] Notes App
-- [x] [BMI Calculator](https://proffesorghost.github.io/bmi-calculator/) :tada:
+- [x] [BMI Calculator](https://eptsy.github.io/bmi-calculator/) :tada:
 - [ ] Calculator
-- [x] [Digital Clock](https://proffesorghost.github.io/d-js-clock/) :tada:
+- [x] [Digital Clock](https://eptsy.github.io/d-js-clock/) :tada:
 - [ ] Weight Converter
-- [x] [Temperature Converter](https://proffesorghost.github.io/temperature-converter/) :tada:
+- [x] [Temperature Converter](https://eptsy.github.io/temperature-converter/) :tada:
 - [ ] Running Game
-- [x] [Word Count Tool](https://proffesorghost.github.io/word-counter-tool/) :tada:
+- [x] [Word Count Tool](https://eptsy.github.io/word-counter-tool/) :tada:
 - [ ] Accordion
 - [ ] Async Await – Random Joke Generator
 - [ ] Modules, Imports and Exports
-- [x] [GitHub Profile Search App](https://proffesorghost.github.io/githubprofilesearchapp/) :tada:
+- [x] [GitHub Profile Search App](https://eptsy.github.io/githubprofilesearchapp/) :tada:
 - [ ] Wikipedia Search App
 - [ ] Image Slider
 - [ ] JavaScript Array Methods
@@ -52,7 +52,7 @@
 - [ ] Product Filter
 - [ ] Product Carousel Slider
 - [ ] Vertical Tabs
-- [x] [Count Up App](https://proffesorghost.github.io/countupapp/) :tada:
+- [x] [Count Up App](https://eptsy.github.io/countupapp/) :tada:
 - [ ] Digital Piano
 - [ ] Form Validation
 - [ ] Password Visibility Toggle
@@ -63,19 +63,19 @@
 - [ ] Currency Converter
 - [ ] Movie Listing App
 - [ ] Floating Action Button
-- [x] [Dark and Light Mode Toggler](https://proffesorghost.github.io/darkandlightmodetoggler/) :tada:
+- [x] [Dark and Light Mode Toggler](https://eptsy.github.io/darkandlightmodetoggler/) :tada:
 - [ ] Web Speech API – Speech To Text App
 - [ ] Web Speech API – Speech To Text App – With Voice Command
 - [ ] Speech Synthesis – Text To Speech App
-- [x] [Type Writing Effect Project](https://proffesorghost.github.io/typewritingeffectproject/) :tada:
+- [x] [Type Writing Effect Project](https://eptsy.github.io/typewritingeffectproject/) :tada:
 - [ ] Custom Progress Bar
 - [ ] Custom Alert & Toast Notification (ES6 Classes)
 - [ ] Custom Alert & Toast Notification With Progress Bar
 - [ ] Custom Confirm Dialog Box (ES6 Classes)
 - [ ] Custom Range Slider
 - [ ] Modal With Countdown Event
-- [x] [Website Preloader](https://proffesorghost.github.io/preloader/) :tada:
-- [x] [Testimonial Slider](https://proffesorghost.github.io/owlcarousel/) :tada:
+- [x] [Website Preloader](https://eptsy.github.io/preloader/) :tada:
+- [x] [Testimonial Slider](https://eptsy.github.io/owlcarousel/) :tada:
 - [ ] Tweet Character Count
 - [ ] Click to Tweet
 - [ ] Embed Twitter Timeline
