@@ -1,0 +1,17 @@
+/* impoting fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+/* Background Color */
+body{
+    background-color: darkslategray;
+    color: wheat;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 2rem;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
+.clock{
+    margin-top: 400px;
+    text-shadow: 3px 3px rgba(7, 7, 7, 0.514);
+}

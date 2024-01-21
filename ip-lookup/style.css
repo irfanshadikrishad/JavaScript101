@@ -1,0 +1,32 @@
+/*Contrial One - Number*/
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/linedpaper.png);
+}
+p{
+    font-size: 1.2rem;
+}
+#flag{
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 30px;
+}
+#ipadress{
+    display: inline-block;
+    font-size: 3rem;
+    font-family: 'Contrail One', cursive;
+}
+#location, #continent, #language, #lati, #long{
+    display: inline-block;
+    margin-left: 10px;
+}

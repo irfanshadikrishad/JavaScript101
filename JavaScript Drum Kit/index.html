@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit | @irfanshadikrishad</title>
+    <link rel="shortcut icon" href="./img/drum-set.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="keys">
+      <div class="key" data-key="97">
+        <kbd>1</kbd>
+        <span class="sound">Clap</span>
+      </div>
+      <div class="key" data-key="98">
+        <kbd>2</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div class="key" data-key="99">
+        <kbd>3</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div class="key" data-key="100">
+        <kbd>4</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div class="key" data-key="101">
+        <kbd>5</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div class="key" data-key="102">
+        <kbd>6</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div class="key" data-key="103">
+        <kbd>7</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div class="key" data-key="104">
+        <kbd>8</kbd>
+        <span class="sound">tink</span>
+      </div>
+      <div class="key" data-key="105">
+        <kbd>9</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div>
+    <p>use numpad to play</p>
+    <a href="https://github.com/irfanshadikrishad" target="_blank"
+      ><i class="fa-brands fa-github"></i
+    ></a>
+    <!-- audio's to play -->
+    <audio data-key="97" src="./sounds/clap.wav"></audio>
+    <audio data-key="98" src="./sounds/hihat.wav"></audio>
+    <audio data-key="99" src="./sounds/kick.wav"></audio>
+    <audio data-key="100" src="./sounds/openhat.wav"></audio>
+    <audio data-key="101" src="./sounds/boom.wav"></audio>
+    <audio data-key="102" src="./sounds/ride.wav"></audio>
+    <audio data-key="103" src="./sounds/snare.wav"></audio>
+    <audio data-key="104" src="./sounds/tink.wav"></audio>
+    <audio data-key="105" src="./sounds/tom.wav"></audio>
+    <!-- JavaScript Linking -->
+    <script src="./src/script.js"></script>
+  </body>
+</html>

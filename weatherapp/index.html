@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <!--CSS Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!--FontAwesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="whole">
+        <div class="search">
+            <form action="" id="form">
+                <input type="text" placeholder="eg: New York" id="loc" required>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </div>
+        <div id="result">
+            <div class="head">
+                <p class="h">Right now in &nbsp;<p id="location"></p>, Its <p id="desc"></p></p>
+            </div>
+            <div class="main">
+                <div class="icon">
+                    <img src="img/icon.png" alt="" id="icon">
+                </div>
+                <div class="temp">
+                    <h1 id="temp"></h1>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-wind"></i><p id="speed"></p><br>
+                    <i class="fa-solid fa-gauge-high"></i><p id="pressure"></p><br>
+                    <i class="fa-solid fa-droplet"></i><p id="humidity"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--JS Linking-->
+<script src="script.js"></script>
+</body>
+</html>

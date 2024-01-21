@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="qrcode.png" type="image/x-icon">
+</head>
+<body>
+    <div class="pre-loader"></div>
+    <div class="post-loader">
+        <div class="contents">
+            <div class="qr-code">
+                <h1 id="head">Qr Code Generator</h1>
+                <p>Paste url or type text to create qr code</p>
+                <input id="inp" type="text"><br>
+                <button id="qr-btn" onclick="qrcodegen()">Generate QR Code</button><br>
+                <div class="qr-img-align">
+                <div id="qr-show"><div class="qrimg-container">
+                <img id="qr-img" class="qr-img" src="" alt="Qr Code"></div></div></div>
+            </div>
+        </div>
+        <div class="barcode">
+            <div class="bar-code">
+                <h1>Barcode Generator</h1>
+                <p>Type text to convert to barcode</p>
+                <input type="bar" id="bar"><br>
+                <button id="barcodegen" onclick="barcodegen()">Generate Barcode</button><br>
+                <div class="bar-align">
+                <svg id="barcode"></svg></div>
+            </div>
+        </div>
+    </div>
+<script src="JsBarcode.all.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

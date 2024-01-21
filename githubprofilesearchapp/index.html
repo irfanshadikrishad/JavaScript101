@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Search App</title>
+    <link rel="icon" href="img/github.png" type="image/x-icon">
+    <!--CSS Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!--FontAwesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="whole">
+        <div class="header container">
+            <div class="header1">
+                <h1>gitsearch</h1>
+                <h3>Lets stalk someone on github</h3>
+            </div>
+            <div class="header2">
+                <button id="lightmode" onclick="dark()">LIGHT <i class="fa-solid fa-sun"></i></button>
+            </div>
+        </div>
+        <div class="search container">
+            <form action="" class="form" id="theform">
+                <input type="text" id="searchuser" spellcheck="false" required>
+                <button id="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="container" id="result">
+            <div class="left">
+                <img src="" alt="" id="pfp">
+            </div>
+            <div class="right">
+                <h1 id="name"></h1>
+                <a href="" id="username-url" target="_blank"><h4 id="username"></h4></a>
+                <p id="bio"></p>
+                <div class="main">
+                    <div class="one">
+                        <h4>Followers</h4>
+                        <h5 id="follower"></h5>
+                    </div>
+                    <div class="two">
+                        <h4>Following</h4>
+                        <h5 id="following"></h5>
+                    </div>
+                    <div class="three">
+                        <h4>Repositories</h4>
+                        <h5 id="repo"></h5>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="top">
+                        <div class="adress">
+                            <i class="fa-solid fa-location-dot lower-icon"></i>
+                            <p id="location"></p>
+                        </div>
+                        <div class="adress adress2">
+                            <i class="fa-solid fa-link lower-icon"></i>
+                            <a href="" id="website-url" target="_blank"><p id="website"></p></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="adress">
+                            <i class="fa-brands fa-square-twitter lower-icon"></i>
+                            <a href="" id="twitter-url" target="_blank"><p id="twitter"></p></a>
+                        </div>
+                        <div class="adress adress2">
+                            <i class="fa-regular fa-building lower-icon"></i>
+                            <p id="organization"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="join">
+                    Join date:&ThickSpace;<p id="joindate"></p>
+                </div>
+            </div>
+        </div>
+        <div class="thecredit container">
+            <a href="https://github.com/irfanshadikofficial/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://facebook.com/irfanshadikofficial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCyv-8tjvvMctkIlljjw9Gfg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/irfanshadikofficial/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/irfanshadikoffi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://irfanshadik.live" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        </div>
+    </div>
+<!--JS Linking-->
+<script src="script.js"></script>
+</body>
+</html>

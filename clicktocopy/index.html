@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Copy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/copy.png" type="image/x-icon">
+</head>
+<body>
+    <div class="wholecontent">
+        <div class="header">
+            <div><img src="img/copy.png" alt="" class="icon"></div>
+            <div><h1 class="h">Click to Copy</h1></div>
+        </div>
+        <div class="main">
+        <input type="text" value="https://github.com/irfanshadikofficial" id="myinput">
+        <div class="tooltip">
+            <button onclick="clickin()" onmouseout="clickout()" class="btn">
+                <span class="tooltiptext" id="mytooltip">Click to Copy</span>
+                Copy text
+            </button>
+        </div>
+        </div>
+        <div class="credit">
+            <a class="li" href="https://github.com/irfanshadikofficial">@irfanshadikofficial</a> ⭍  
+            <a class="li" href="https://github.com/irfanshadikofficial/100DaysofJavaScript#100daysofjavascript">
+                100DaysofJavaScript
+            </a>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,50 +1,70 @@
-# 100DaysofJavaScript
+# JavaScript101
 
+All the JavaScript projects i did or wanted to do. Any contribution is appreciated to make it useful for someone learning JavaScript or looking for project ideas or example.
+
+- [x] [Animated Circle Text](https://eptsy.github.io/animated-text-circle/) 🎉
+- [x] [Base64](https://eptsy.github.io/base64/) :tada:
+- [x] [BMI Calculator](https://eptsy.github.io/bmi-calculator/) :tada:
+- [x] [Click to Copy](https://eptsy.github.io/click-to-copy/) :tada:
 - [x] [Counter App](https://eptsy.github.io/counterapp/) :tada:
-- [x] [Random Hex Color Generator](https://eptsy.github.io/randomhexcolorgenerator/) :tada:
-- [x] [Random Number Generator](https://eptsy.github.io/randomnumbergenerator/) :tada:
+- [x] [Count Up App](https://eptsy.github.io/countupapp/) :tada:
+- [x] [Dark and Light Mode Toggler](https://eptsy.github.io/darkandlightmodetoggler/) :tada:
+- [x] [Digital Clock](https://eptsy.github.io/d-js-clock/) :tada:
+- [x] [GitHub Profile Search App](https://eptsy.github.io/githubprofilesearchapp/) :tada:
+- [x] [Google Drive Download Link Generator](https://eptsy.github.io/googledirectdownloadgenerator/) :tada:
+- [x] [Input Field Character Counter](https://eptsy.github.io/char-counter/) :tada:
+- [x] [Internet Connection Status Detector](https://eptsy.github.io/internet-connection-status/) :tada:
+- [x] [Ip Lookup](https://eptsy.github.io/iplookie/) :tada: (might only work on http)
+- [x] [JavaScript Drum Kit](https://eptsy.github.io/drum-kit/) :tada:
+- [x] [JavaScript Clock [Digital]](https://eptsy.github.io/js-digital-clock/) :tada:
+- [x] [Live visit counter.](https://eptsy.github.io/livevisitcounter/) :tada: (deprecated)
 - [x] [Modal/Popup](https://eptsy.github.io/modal/) :tada:
 - [x] [Palindrome Checker](https://eptsy.github.io/palindromechecker/) :tada:
+- [x] [Push.Js-Notifications](https://eptsy.github.io/push.js-notifications/) :tada:
+- [x] [Qrcode, Barcode Generator.](https://eptsy.github.io/qrcode-barcode/) :tada:
+- [x] [Random Hex Color Generator](https://eptsy.github.io/randomhexcolorgenerator/) :tada:
+- [x] [Random Number Generator](https://eptsy.github.io/randomnumbergenerator/) :tada:
+- [x] [Random Quote Generator](https://eptsy.github.io/random-quote-generator/) :tada:
+- [x] [Scroll Indicator + Highlighter.](https://eptsy.github.io/customScrollIndicator-highlighter/) 🎉
+- [x] [Scroll To Top](https://eptsy.github.io/scrolltotop/) :tada:
+- [x] [Sololearn User Search App](https://eptsy.github.io/sololearn-user-search-app/) :tada:
+- [x] [Speech Synthesis](https://eptsy.github.io/speech-synthesis/) :tada:
+- [x] [Temperature Converter](https://eptsy.github.io/temperature-converter/) :tada:
+- [x] [Time Countdown](https://eptsy.github.io/timecountdown/) :tada:
+- [x] [Type Writing Effect Project](https://eptsy.github.io/typewritingeffectproject/) :tada:
 - [x] [Vowel Counter App](https://eptsy.github.io/vowelcounter/) :tada:
-- [x] [Click to Copy](https://eptsy.github.io/click-to-copy/) :tada:
-- [x] [Google Drive Download Link Generator](https://eptsy.github.io/googledirectdownloadgenerator/) :tada:
 - [x] [Weather App](https://eptsy.github.io/weatherapp/) :tada:
-- [x] [Input Field Character Counter](https://eptsy.github.io/char-counter/) :tada:
+- [x] [Website Preloader](https://eptsy.github.io/preloader/) :tada:
+- [x] [Word Count Tool](https://eptsy.github.io/word-counter-tool/) :tada:
+- [x] [Sticky Nav Bar on Scroll](https://itsamuhaimin.github.io) :tada:
+- [x] [Page Scroll Indicator](https://eptsy.github.io/customScrollIndicator-highlighter/) :tada:
+- [x] [Page Animation With AOS Library](https://itsamuhaimin.github.io) :tada:
+- [x] [Cursor Animation on MouseMove.](https://eptsy.github.io/custom-cursor-tracker/) 🎉
+- [x] [JavaScript BMI Calculator.](https://eptsy.github.io/bmi-calculator/) :tada:
+- [x] [Testimonial Slider](https://eptsy.github.io/owlcarousel/) :tada:
 - [ ] Lyrics Search App
-- [x] [Internet Connection Status Detector](https://eptsy.github.io/internet-connection-status/) :tada:
 - [ ] Quiz App
 - [ ] API Project
 - [ ] HTTP Request Project
-- [x] [Random Quote Generator](https://eptsy.github.io/random-quote-generator/) :tada:
 - [ ] List Search Project
 - [ ] Date Countdown
-- [x] [Time Countdown](https://eptsy.github.io/timecountdown/) :tada:
 - [ ] Tip Calculator
 - [ ] Smooth Scroll Effect
-- [x] [Sticky Nav Bar on Scroll](https://itsamuhaimin.github.io) :tada:
 - [ ] Active Menu Switcher
-- [x] [Scroll To Top](https://eptsy.github.io/scrolltotop/) :tada:
 - [ ] Responsive Mobile Menu – part 1 & 2
 - [ ] Responsive Mobile Menu with Submenu
-- [x] [Page Scroll Indicator](https://eptsy.github.io/customScrollIndicator-highlighter/) :tada:
 - [ ] Newsletter Form on Scroll
-- [x] [Page Animation With AOS Library](https://itsamuhaimin.github.io) :tada:
 - [ ] Password Generator
 - [ ] Local Storage
 - [ ] Simple ToDo App
 - [ ] Todo App with Local Storage
 - [ ] Notes App
-- [x] [BMI Calculator](https://eptsy.github.io/bmi-calculator/) :tada:
 - [ ] Calculator
-- [x] [Digital Clock](https://eptsy.github.io/d-js-clock/) :tada:
 - [ ] Weight Converter
-- [x] [Temperature Converter](https://eptsy.github.io/temperature-converter/) :tada:
 - [ ] Running Game
-- [x] [Word Count Tool](https://eptsy.github.io/word-counter-tool/) :tada:
 - [ ] Accordion
 - [ ] Async Await – Random Joke Generator
 - [ ] Modules, Imports and Exports
-- [x] [GitHub Profile Search App](https://eptsy.github.io/githubprofilesearchapp/) :tada:
 - [ ] Wikipedia Search App
 - [ ] Image Slider
 - [ ] JavaScript Array Methods
@@ -52,7 +72,6 @@
 - [ ] Product Filter
 - [ ] Product Carousel Slider
 - [ ] Vertical Tabs
-- [x] [Count Up App](https://eptsy.github.io/countupapp/) :tada:
 - [ ] Digital Piano
 - [ ] Form Validation
 - [ ] Password Visibility Toggle
@@ -63,19 +82,15 @@
 - [ ] Currency Converter
 - [ ] Movie Listing App
 - [ ] Floating Action Button
-- [x] [Dark and Light Mode Toggler](https://eptsy.github.io/darkandlightmodetoggler/) :tada:
 - [ ] Web Speech API – Speech To Text App
 - [ ] Web Speech API – Speech To Text App – With Voice Command
 - [ ] Speech Synthesis – Text To Speech App
-- [x] [Type Writing Effect Project](https://eptsy.github.io/typewritingeffectproject/) :tada:
 - [ ] Custom Progress Bar
 - [ ] Custom Alert & Toast Notification (ES6 Classes)
 - [ ] Custom Alert & Toast Notification With Progress Bar
 - [ ] Custom Confirm Dialog Box (ES6 Classes)
 - [ ] Custom Range Slider
 - [ ] Modal With Countdown Event
-- [x] [Website Preloader](https://eptsy.github.io/preloader/) :tada:
-- [x] [Testimonial Slider](https://eptsy.github.io/owlcarousel/) :tada:
 - [ ] Tweet Character Count
 - [ ] Click to Tweet
 - [ ] Embed Twitter Timeline
@@ -90,3 +105,41 @@
 - [ ] Animated Vertical Timeline Project
 - [ ] Music Player App
 - [ ] Pseudo AI Project – Anita
+- [ ] JavaScript Calculator.
+- [ ] JavaScript Clock. [Analog]
+- [ ] Tick Tack Toe.
+- [ ] Hangman Game.
+- [ ] To-do list.
+- [ ] Mouseover Event.
+- [ ] Rock Papper Scissor.
+- [ ] Weather App.
+- [ ] Web Scrapping.
+- [ ] Captcha Generator.
+- [ ] CSS + JS Clock
+- [ ] Playing with CSS Variables and JS
+- [ ] Array Cardio Day 1
+- [ ] Flex Panels Image Gallery
+- [ ] Ajax Type Ahead
+- [ ] Array Cardio Day 2
+- [ ] Fun with HTML5 Canvas
+- [ ] 14 Must Know Dev Tools Tricks
+- [ ] Hold Shift to Check Multiple Checkboxes
+- [ ] Custom HTML5 Video Player
+- [ ] Key Sequence Detection (KONAMI CODE)
+- [ ] Slide In on Scroll
+- [ ] Object and Arrays - Reference VS Copy
+- [ ] LocalStorage and Event Delegation
+- [ ] CSS Text Shadow Mouse Move Effect
+- [ ] Sorting Band Names without articles
+- [ ] Tally String Times with Reduce
+- [ ] Unreal Webcam Fun
+- [ ] Native Speech Recognition
+- [ ] Geolocation based Speedometer and Compass
+- [ ] Follow Along Links
+- [ ] Sticky Nav
+- [ ] Event Capture, Propagation, Bubbling and Once
+- [ ] Stripe Follow Along Dropdown
+- [ ] Click and Drag to Scroll
+- [ ] Video Speed Controller UI
+- [ ] Countdown Clock
+- [ ] Whack A Mole Game

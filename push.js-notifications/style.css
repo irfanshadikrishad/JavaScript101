@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/topography.png);
+}
+.btn{
+    font-weight: bold;
+    background-color: slateblue;
+    color: lavender;
+    border: 5px solid;
+    border-radius: 8px;
+    padding: 10px 45px;
+    cursor: pointer;
+}

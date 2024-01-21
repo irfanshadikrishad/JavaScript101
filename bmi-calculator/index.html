@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full">
+    <div class="whole">
+    <div class="header container">
+        <h1>BMI Calculator</h1>
+    </div>
+    <!--Calculation-->
+    <div class="container">
+    <div class="calc">
+        <h4>Unit</h5>
+        <select name="unit" id="unit">
+            <option value="standard">Standard</option>
+            <option value="metric">Metric</option>
+        </select>
+        <h4 style="margin-top: 10px;">Weight</h4><input type="text" id="weight" placeholder="kg">
+        <h4 style="margin-top: 10px;">Height</h4>
+        <input type="text" id="feet" placeholder="feet">
+    </div>
+    </div>
+    <!--SUBMIT-->
+    <div class="btn container">
+        <button id="submit" onclick="calculate()">Submit</button>
+    </div>
+    <!--RESULT-->
+    <div class="container result">
+    <p class="yb">Your BMI</p>
+    <p class="bmi" id="bmires">(￣o￣) . z Z</p>
+    </div>
+    <!--INFORMATION-->
+    <div class="container info">
+        <div class="underweight">
+            <h4>Underweight</h4>
+            <p><b><18</b></p>
+        </div>
+        <div class="normal">
+            <h4>
+                Normal<br><18.5-25
+            </h4>
+        </div>
+        <div class="overweight">
+            <h4>
+                Over Weight<br><25-30
+            </h4>
+        </div>
+        <div class="obese">
+            <h4>
+                Obese<br>>30
+            </h4>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

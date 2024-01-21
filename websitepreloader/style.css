@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(img/memphis-mini.webp);
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+#preloader{
+    display: block;
+    background: url(img/preloader.gif) no-repeat center center;
+    height: 100vh;
+    z-index: 999;
+}
+#postloader{
+    display: none;
+}
+.thecredit{
+    margin-top: 25px;
+}
+.thecredit, .next{
+    margin-left: 340px;
+}
+hr{
+    width: 70%;
+}
+.fa-github, .fa-facebook, .fa-youtube, .fa-linkedin, .fa-twitter{
+    color: black;
+    font-size: 1.3rem;
+    margin: 0 5px;
+}
+.gifs{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px auto;
+}
+.gif{
+    width: 300px;
+    margin: 5px;
+    border-radius: 10px;
+}

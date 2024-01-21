@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/dot-grid.webp);
+}
+.main>h1{
+    display: inline;
+}
+.icon{
+    width: 50px;
+}
+.fa-github, .fa-facebook, .fa-youtube, .fa-linkedin, .fa-twitter{
+    color: black;
+    font-size: 1.3rem;
+    margin: 0 5px;
+}
+.thecredit{
+    margin-top: 20px;
+}
+#count{
+    color: tomato;
+}

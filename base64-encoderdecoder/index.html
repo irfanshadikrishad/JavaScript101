@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 - Encoder Decoder</title>
+    <link rel="icon" href="img/manual.png" type="image/x-icon">
+    <!--CSS Linking-->
+    <link rel="stylesheet" href="style.css">
+    <!--FontAwesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="whole">
+        <div class="heading">
+            <a target="_blank" href="https://github.com/irfanshadikofficial/100DaysofJavaScript#100daysofjavascript"><img src="img/manual.png" alt="Logo" class="icon" draggable="false"></a>
+        </div>
+        <div class="main">
+            <div class="encode">
+                <p id="test"></p>
+                <h1 class="header">Base64 Encoder</h1>
+                <input type="text" placeholder="Text to Encode" id="encodetext">
+                <button id="generate" onclick="encode()"><i class="fa-solid fa-gears"></i></button><br>
+                <input type="text" placeholder="Encoded Text" id="encodedtext">
+                <button id="ecopy" onclick="eclickin()"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            <div class="decode">
+                <h1 class="header">Base64 Decoder</h1>
+                <input type="text" placeholder="Text to Decode" id="decodetext">
+                <button id="generate" onclick="decode()"><i class="fa-solid fa-gears"></i></button><br>
+                <input type="text" placeholder="Decoded Text" id="decodedtext">
+                <button id="dcopy" onclick="dclickin()"><i class="fa-solid fa-copy"></i></button>
+            </div>
+        </div>
+        <div class="thecredit">
+            <a href="https://github.com/irfanshadikofficial/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://facebook.com/irfanshadikofficial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCyv-8tjvvMctkIlljjw9Gfg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/irfanshadikofficial/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/irfanshadikoffi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://irfanshadik.live" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        </div>
+    </div>
+<!--JS Linking-->
+<script src="script.js"></script>
+</body>
+</html>

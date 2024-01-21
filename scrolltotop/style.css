@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(img/memphis-mini.webp);
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+.header{
+    margin: 55px auto;
+}
+.icon{
+    width: 75px;
+    margin-top: 25px;
+}
+.t{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    padding: 15px;
+    background-color: lightblue;
+    border-radius: 50%;
+    border: 5px solid gray;
+    cursor: pointer;
+    right: 1%;
+    bottom: 2%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

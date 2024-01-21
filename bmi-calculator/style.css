@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #c0c0c0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.full{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.calc{
+    background-color: darkgray;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0 0 0;
+}
+.result{
+    display: flex;
+}
+#unit{
+    width: 200px;
+    height: 30px;
+    background-color: #c0c0c0;
+    border: 2px solid;
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#unit:focus-visible, #weight:focus-visible, #feet:focus-visible, #inch:focus-visible{
+    outline: none;
+}
+.whole{
+    display: flex;
+    flex-direction: column;
+}
+#weight, #feet, #inch{
+    width: 190px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 2px solid;
+    padding: 0 0 0 5px;
+    background-color: #c0c0c0;
+    font-weight: 600;
+}
+#submit{
+    margin-top: 15px;
+    width: 540px;
+    height: 50px;
+    background-color: darkgray;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.result{
+    margin-top: 15px;
+}
+.yb{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-weight: 600;
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+    justify-content: center;
+    height: 50px;
+    background-color: darkgray;
+}
+.bmi{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-weight: 600;
+    width: 416px;
+    border-radius: 0 10px 10px 0;
+    justify-content: center;
+    height: 50px;
+    background-color: green;
+    color: white;
+}
+.info{
+    display: flex;
+}
+.underweight, .normal, .overweight, .obese{
+    margin-top: 15px;
+    width: 95px;
+    padding: 5px 20px;
+    color: white;
+}
+.underweight{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(206, 6, 6, 0.87);
+    border-radius: 10px 0 0 10px;
+}
+.normal{
+    background-color: green;
+}
+.overweight{
+    background-color: tomato;
+}
+.obese{
+    background-color: rgba(206, 6, 6, 0.87);
+    border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width:425px) {
+    .container{
+        width: 50%;
+    }
+    .calc{
+        width: auto;
+    }
+    #submit{
+        width: -webkit-fill-available;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .underweight, .normal, .overweight, .obese{
+        width: auto;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .full{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width:320px) {
+    .container{
+        width: 40%;
+    }
+}

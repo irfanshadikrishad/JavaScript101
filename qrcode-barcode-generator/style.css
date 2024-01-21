@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    min-height: 100vh;
+}
+.qr-img{
+    width: 200px;
+    border-radius: 10px;
+}
+.qrimg-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    border: 2px solid #161616;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: white;
+}
+.qr-img-align{
+    display: flex;
+    justify-content: center;
+}
+#qr-show{
+    display: none;
+}
+.qr-code{
+    background-color: #346751;
+    width: 600px;
+    height: auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+h1, p{
+    color: white;
+}
+input[type='text']{
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+input[type='text']:focus-visible{
+    outline: none;
+}
+#qr-btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/*barcode*/
+.bar-code{
+    background-color: #346751;
+    height: auto;
+    padding: 25px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+input[type="bar"]{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    padding-left: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+input[type="bar"]:focus-visible{
+    outline: none;
+}
+#barcodegen{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.bar-align{
+    display: flex;
+    justify-content: center;
+}
+#barcode{
+    display: none;
+    margin-top: 5px;
+}
