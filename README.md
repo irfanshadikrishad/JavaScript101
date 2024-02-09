@@ -143,3 +143,13 @@ All the JavaScript projects i did or wanted to do. Any contribution is appreciat
 - [ ] Video Speed Controller UI
 - [ ] Countdown Clock
 - [ ] Whack A Mole Game
+- [ ] Scroll Animation
+- [ ] E-Commerce Website
+- [ ] Snake Game
+- [ ] Flappy Bird
+- [ ] Doodle Jump
+- [ ] Chrome Dinosaur
+- [ ] Brick Breaker
+- [ ] Pong
+- [ ] Wordle
+- [ ] Slide Puzzle
