@@ -51,7 +51,7 @@ All the JavaScript projects i did or wanted to do. Any contribution is appreciat
 - [ ] Active Menu Switcher
 - [ ] Responsive Mobile Menu with Submenu
 - [ ] Newsletter Form on Scroll
-- [ ] Password Generator
+- [x] [Password Generator](./password-generator) :tada:
 - [ ] Todo App with Local Storage
 - [ ] Notes App
 - [ ] Calculator
@@ -66,7 +66,7 @@ All the JavaScript projects i did or wanted to do. Any contribution is appreciat
 - [ ] Vertical Tabs
 - [ ] Digital Piano
 - [ ] Form Validation
-- [ ] Password Visibility Toggle
+- [x] [Password Visibility Toggle](./password-visibility-toggle) :tada:
 - [ ] Password Strength Indicator
 - [ ] Animated Login UI
 - [ ] Animated Search Bar
