@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shift Select with Keyboard</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="checkbox-list" id="checkboxContainer">
+      <h2>Select Emails</h2>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 1</span>
+      </div>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 2</span>
+      </div>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 3</span>
+      </div>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 4</span>
+      </div>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 5</span>
+      </div>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 6</span>
+      </div>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 7</span>
+      </div>
+      <div class="checkbox-item" tabindex="0">
+        <input type="checkbox" /><span>Email 8</span>
+      </div>
+    </div>
+
+    <script>
+      const items = document.querySelectorAll(".checkbox-item");
+      let checkboxes = [...items].map((item) =>
+        item.querySelector('input[type="checkbox"]'),
+      );
+      let lastChecked = null;
+      let focusedIndex = 0;
+
+      function handleClick(e) {
+        let inBetween = false;
+
+        if (e.shiftKey && lastChecked) {
+          const start = checkboxes.indexOf(lastChecked);
+          const end = checkboxes.indexOf(this);
+
+          const [min, max] = [Math.min(start, end), Math.max(start, end)];
+          const isChecking = this.checked;
+
+          for (let i = min; i <= max; i++) {
+            checkboxes[i].checked = isChecking;
+          }
+        }
+
+        lastChecked = this;
+      }
+
+      checkboxes.forEach((checkbox) =>
+        checkbox.addEventListener("click", handleClick),
+      );
+
+      // Keyboard navigation
+      items.forEach((item, i) => {
+        item.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowDown") {
+            e.preventDefault();
+            focusedIndex = Math.min(items.length - 1, focusedIndex + 1);
+            items[focusedIndex].focus();
+          } else if (e.key === "ArrowUp") {
+            e.preventDefault();
+            focusedIndex = Math.max(0, focusedIndex - 1);
+            items[focusedIndex].focus();
+          } else if (e.key === " " || e.key === "Spacebar") {
+            e.preventDefault();
+            const checkbox = items[focusedIndex].querySelector("input");
+            const wasChecked = checkbox.checked;
+            checkbox.checked = !wasChecked;
+
+            if (e.shiftKey && lastChecked) {
+              const current = checkboxes[focusedIndex];
+              const start = checkboxes.indexOf(lastChecked);
+              const end = checkboxes.indexOf(current);
+              const [min, max] = [Math.min(start, end), Math.max(start, end)];
+              for (let i = min; i <= max; i++) {
+                checkboxes[i].checked = !wasChecked;
+              }
+            }
+
+            lastChecked = checkboxes[focusedIndex];
+          }
+        });
+
+        item.addEventListener("focus", () => {
+          items.forEach((i) => i.classList.remove("focused"));
+          item.classList.add("focused");
+          focusedIndex = [...items].indexOf(item);
+        });
+      });
+    </script>
+  </body>
+</html>
