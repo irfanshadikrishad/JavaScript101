@@ -104,7 +104,7 @@ All the JavaScript projects i did or wanted to do. Any contribution is appreciat
 - [ ] Web Scrapping.
 - [ ] Captcha Generator.
 - [ ] CSS + JS Clock
-- [ ] Hold Shift to Check Multiple Checkboxes
+- [x] [Hold Shift to Check Multiple Checkboxes](./Hold Shift to Check Multiple Checkboxes) :tada:
 - [ ] Custom HTML5 Video Player
 - [ ] Key Sequence Detection (KONAMI CODE)
 - [ ] Slide In on Scroll
