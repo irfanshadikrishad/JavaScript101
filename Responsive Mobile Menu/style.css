@@ -1,0 +1,91 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: #f4f7f2; color: #333; }
+
+/* NAVBAR & SIDEBAR */
+.navbar { position: fixed; top: 0; left: 0; right: 0; background: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e5e5; z-index: 1000; }
+.navbar h2 { font-size: 20px; color: #2e4d2c; }
+.menu-btn { font-size: 24px; cursor: pointer; border: none; background: none; }
+.sidebar { position: fixed; top: 0; left: -100%; width: 250px; height: 100%; background: #2e4d2c; color: #fff; padding: 20px; transition: 0.3s ease; z-index: 2000; }
+.sidebar.active { left: 0; }
+.sidebar h2 { margin-top: 10px; }
+.sidebar ul { list-style: none; margin-top: 20px; }
+.sidebar ul li { margin: 15px 0; }
+.sidebar ul li a { text-decoration: none; color: #fff; font-size: 18px; display: block; transition: 0.3s; }
+.sidebar ul li a:hover { color: #b2e6a1; }
+
+/* DASHBOARD */
+.dashboard { margin-top: 70px; padding: 20px; }
+.welcome h3 { font-size: 22px; color: #2e4d2c; }
+.tabs { display: flex; gap: 10px; margin: 20px 0; }
+.tab { padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background: #fff; cursor: pointer; font-size: 14px; }
+.tab.active { background: #2e4d2c; color: #fff; border: none; }
+.section-title { font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #2e4d2c; }
+
+/* PLANT CARDS */
+.plant-cards { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px; }
+.plant-card { min-width: 150px; background: #fff; padding: 15px; border-radius: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
+.plant-card img { width: 100px; height: 100px; object-fit: cover; margin-bottom: 10px; }
+.plant-card .info { font-size: 12px; display: flex; justify-content: space-between; margin-top: 5px; }
+
+
+/* RELATED PLANTS */
+.related-plants { margin-top: 20px; }
+.related-item { background: #fff; padding: 15px; border-radius: 16px; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.related-item img { width: 60px; height: 60px; border-radius: 12px; object-fit: cover; margin-left: 15px; }
+.related-info { flex: 1; }
+.price { color: #2e4d2c; font-weight: bold; margin-top: 5px; }
+
+/* SCANNER */
+.phone-screen { width: 100%; max-width: 400px; margin: auto; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.scanner-area { position: relative; margin: 20px auto; width: 250px; height: 250px; display: flex; align-items: center; justify-content: center; }
+.plant-img { width: 100%; border-radius: 12px; }
+.scanner-frame { position: absolute; top: 50%; left: 50%; width: 250px; height: 250px; border: 2px dashed #2e4d2c; border-radius: 12px; transform: translate(-50%, -50%); }
+.scanner-line { position: absolute; left: 0; right: 0; height: 2px; background: limegreen; animation: scan 2s linear infinite; }
+@keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
+.circle-btn { width: 50px; height: 50px; border-radius: 50%; border: none; margin: 10px; font-size: 20px; background: #2e4d2c; color: white; }
+
+
+/* PLANT DETAILS */
+.container { padding: 20px; }
+header { display: flex; justify-content: space-between; align-items: center; }
+.back-btn, .info-btn { background: none; border: none; font-size: 20px; cursor: pointer; }
+.plant-card { background: #fff; padding: 15px; border-radius: 12px; margin: 15px 0; }
+.plant-image img { width: 100%; border-radius: 12px; }
+.info-badges { display: flex; justify-content: space-around; margin: 20px 0; }
+.badge { background: #fff; padding: 10px; border-radius: 12px; text-align: center; flex: 1; margin: 0 5px; }
+.view-more { width: 100%; padding: 12px; background: #2e4d2c; color: #fff; border: none; border-radius: 12px; cursor: pointer; }
+
+/* LOGIN / INDEX PAGE */
+.center-screen {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  height: 100vh; text-align: center; padding: 20px;
+}
+.center-screen h1 { font-size: 28px; margin-bottom: 10px; color: #2e4d2c; }
+.center-screen p { margin-bottom: 20px; }
+.btn { display: inline-block; padding: 12px 20px; background: #2e4d2c; color: #fff; text-decoration: none; border-radius: 8px; }
+
+/* SETTINGS PAGE */
+.settings-page { margin-top: 80px; padding: 20px; }
+.settings-page h3 { margin-bottom: 20px; color: #2e4d2c; }
+.settings-group { background: #fff; padding: 15px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+.switch-row { display: flex; align-items: center; justify-content: space-between; font-size: 16px; color: #2e4d2c; }
+.settings-page .btn { margin-top: 10px; }
+
+.btn-small {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  background: #2e4d2c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.btn-small:hover {
+  background: #3d6a3a;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+}
