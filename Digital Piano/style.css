@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #9331d4, rgb(239 5 92 / 70%));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.controls button, .controls a {
+  margin: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.controls a {
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.piano-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.piano-keys-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.piano-keys {
+  width: 3.5rem;
+  height: 12rem;
+  border: 1px solid black;
+  margin: 0 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.white-key {
+  background: white;
+}
+
+.black-key {
+  background: black;
+  height: 8rem;
+  width: 2.5rem;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+  z-index: 2;
+}
+
+.piano-keys.active {
+  box-shadow: 0 0 25px 8px gold;
+  transform: scale(1.05);
+  transition: 0.15s;
+}
+
+/* Note labels */
+.piano-keys::after {
+  content: attr(data-note);
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: transparent;
+}
+
+.learning-mode .piano-keys::after {
+  color: black;
+}
