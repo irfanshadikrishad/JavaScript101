@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0b0b;
+  background-image:
+    radial-gradient(circle at 30% 20%, #d9b382, #553c2d 52%, #1e110a 80%),
+    radial-gradient(circle at 75% 75%, #d93adb66, #351939 70%);
+  background-blend-mode: screen;
+  color: #f0d9ac;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.accordion-list {
+  width: 90%;
+  max-width: 720px; /* adaptive max width */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(20, 12, 5, 0.65);
+  border-radius: 20px;
+  box-shadow:
+    0 0 45px #b58e37bb inset;
+  backdrop-filter: blur(6px);
+  border: 2px solid #b99548cc;
+  position: relative;
+  z-index: 10;
+}
+
+/* Accordion basics */
+.accordion {
+  background: linear-gradient(145deg, #472f10, #2f200a);
+  border-radius: 16px;
+  box-shadow: 5px 5px 15px #0f0b08cc,
+              inset 0 0 15px #b3863e77;
+  overflow: hidden;
+  user-select: none;
+  border: 2px solid #b99548cc;
+  transition: box-shadow 0.45s ease;
+  position: relative;
+  z-index: 10;
+}
+.accordion:hover {
+  box-shadow: 7px 7px 25px #f7d872cc,
+              inset 0 0 35px #f9d559bb;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem;
+  background: linear-gradient(145deg, #7e5c1f, #543e11);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-bottom: 3px solid #a67f29;
+  position: relative;
+  z-index: 20;
+}
+.accordion-header:hover {
+  background: linear-gradient(145deg, #fbd75d, #b37a1f);
+}
+
+.mirrored-img {
+  width: clamp(60px, 8vw, 130px);
+  height: clamp(60px, 8vw, 130px);
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 0 12px #dbb35a, 0 0 35px #d3a834bb inset;
+  -webkit-box-reflect:
+    below 5px
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.22), transparent 70%);
+  transition: box-shadow 0.5s ease;
+  flex-shrink: 0;
+}
+
+.accordion:hover .mirrored-img {
+  box-shadow: 0 0 20px #ffea72, 0 0 55px #fff05caa inset;
+}
+
+.accordion-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.accordion-title {
+  font-weight: 900;
+  font-size: clamp(1.3rem, 1.25vw + 1rem, 2.25rem);
+  letter-spacing: 0.045em;
+  color: #ffea72;
+  text-shadow: 0 0 9px #fced7d;
+}
+
+.accordion-toggle {
+  background: transparent;
+  border: none;
+  font-weight: 900;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  color: #ffd851;
+  width: clamp(44px, 5vw, 64px);
+  height: clamp(44px, 5vw, 64px);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.4s ease;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  transform-origin: center;
+}
+.accordion-toggle[aria-expanded="true"] {
+  transform: rotate(45deg);
+  color: #fff;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.3rem;
+  background: #3f2f15;
+  color: #ffe699;
+  font-size: clamp(1rem, 0.75vw + 0.8rem, 1.25rem);
+  line-height: 1.6;
+  transition: max-height 0.55s cubic-bezier(0.35, 0, 0.25, 1), padding 0.45s ease;
+  user-select: text;
+  font-style: italic;
+  font-weight: 600;
+  position: relative;
+  z-index: 20;
+}
+.accordion-content.open {
+  padding: 1.2rem 1.3rem;
+  animation: accordionBounce 0.5s ease forwards;
+}
+
+@keyframes accordionBounce {
+  0% { transform: scaleY(0.87); opacity: 0.75;}
+  60% { transform: scaleY(1.1); opacity: 1;}
+  80% { transform: scaleY(0.95);}
+  100% { transform: scaleY(1);}
+}
+
+/* Blurred background image container */
+.bg-blur-container {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 5;
+}
+
+.bg-blur-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(35px) brightness(0.3);
+  transform: scaleX(-1); /* horizontal mirror */
+}
+
+/* Show blur background when active */
+.accordion.active .bg-blur-container {
+  opacity: 1;
+  pointer-events: auto;
+}
