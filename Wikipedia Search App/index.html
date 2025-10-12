@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WikiSnap — Wikipedia Search & Smart Reader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">
+        <div class="dot">WS</div>
+        <div>
+          <h1>WikiSnap</h1>
+          <p class="lead">Fast Wikipedia search + smart reading tools.</p>
+        </div>
+      </div>
+      <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
+        <button id="darkToggle" class="iconBtn" title="Toggle dark/light">🌙</button>
+        <button id="exportBtn" class="iconBtn" title="Export article to markdown">⤓ MD</button>
+      </div>
+    </header>
+
+    <div class="searchRow">
+      <div class="search">
+        <input id="q" type="search" placeholder="Search Wikipedia (press Enter)" autocomplete="off" />
+        <button id="searchBtn">Search</button>
+      </div>
+      <button id="readBtn" class="iconBtn" title="Read aloud (space)">🔊</button>
+      <button id="saveBtn" class="iconBtn" title="Save to favorites">💾</button>
+    </div>
+
+    <div class="main">
+      <aside class="panel left">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <strong>History & Suggestions</strong>
+          <small style="color:var(--muted)">ctrl+k to focus search</small>
+        </div>
+        <div class="history" id="history"></div>
+
+        <div style="margin-top:12px">
+          <strong>Smart Suggestions</strong>
+          <div class="suggestions" id="suggestions"></div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Favorites</strong>
+          <div id="favorites"></div>
+        </div>
+      </aside>
+
+      <section class="panel center">
+        <div class="articleHeader">
+          <div class="thumb" id="thumb">IMG</div>
+          <div class="meta">
+            <h2 class="title" id="title">Start by searching above</h2>
+            <div class="sub" id="subtitle">Summary & stats will appear here.</div>
+          </div>
+          <div class="actions">
+            <button id="openFull" class="iconBtn" title="Open original Wikipedia page">↗️</button>
+            <button id="compareBtn" class="iconBtn" title="Compare with another article">⇄</button>
+          </div>
+        </div>
+
+        <div class="content" id="content">
+          Search a topic to see a smart summary, top sentences, headings and reading mode.
+        </div>
+
+        <div class="headings" id="headings"></div>
+      </section>
+
+      <aside class="panel right">
+        <div class="card">
+          <strong>Article Quick Facts</strong>
+          <div class="stat"><span>Reading time</span><span id="readTime">—</span></div>
+          <div class="stat"><span>Flesch score</span><span id="readScore">—</span></div>
+          <div class="stat"><span>Top keywords</span></div>
+          <div class="tags" id="keywords"></div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <strong>Smart Snippets</strong>
+          <p class="sub">Top 3 representative sentences</p>
+          <div id="snippets"></div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <strong>Tools</strong>
+          <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+            <button class="iconBtn" id="readerMode">Reader Mode</button>
+            <button class="iconBtn" id="mdExport">Export MD</button>
+            <button class="iconBtn" id="shareBtn">Share Link</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
