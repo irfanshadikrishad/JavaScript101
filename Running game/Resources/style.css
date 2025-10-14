@@ -1,0 +1,268 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/303/295/small/mountains-background-game-vector.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 3px #111a;
+}
+
+.game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Game Over Overlay */
+.gameover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  visibility: hidden;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Character */
+.finn {
+  position: absolute;
+  bottom: 10px;
+  left: 5vw;
+  z-index: 10;
+  user-select: none;
+}
+
+/* Obstacles Container */
+.obstacles {
+  position: absolute;
+  bottom: 10px;
+  left: 90vw;
+  z-index: 8;
+  user-select: none;
+  animation: ani-obs 5s linear infinite;
+}
+
+.obs-stop {
+  animation-play-state: paused !important;
+}
+
+/* Animations */
+.animateFinn {
+  animation: finn 1s linear;
+}
+
+@keyframes finn {
+  0% {
+    bottom: 10px;
+  }
+
+  50% {
+    bottom: 210px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes ani-obs {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: -12vw;
+  }
+}
+
+/* Score and UI panel horizontally centered at top */
+.ui-panel {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  z-index: 15;
+  user-select: none;
+}
+
+/* UI text bars style */
+#score_cont,
+#best_score_bar,
+#timer {
+  font-size: 20px;
+  color: #eaeaea;
+  letter-spacing: 0.7px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  box-shadow: 0 0 8px #0008;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Buttons style */
+#pauseBtn,
+#helpBtn {
+  cursor: pointer;
+  font-weight: 700;
+  background: rgba(30, 30, 30, 0.85);
+  border: 2px solid #f0f0f0;
+  color: #f0f0f0;
+  border-radius: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  min-width: 70px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  box-shadow: 0 0 6px #000a;
+}
+
+#pauseBtn.paused {
+  background-color: #db444f;
+  border-color: #db444f;
+  color: #fff;
+  box-shadow: 0 0 12px #db444f;
+}
+
+#helpBtn {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  border-radius: 50%;
+  line-height: 1;
+  font-weight: 900;
+}
+
+#pauseBtn:hover:not(.paused),
+#helpBtn:hover {
+  background-color: #444;
+  border-color: #eee;
+  color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Help Overlay */
+.help-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.95);
+  color: #fff;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.help-overlay.active {
+  display: flex;
+}
+
+.help-content {
+  background: #111d;
+  padding: 34px 40px;
+  border-radius: 14px;
+  box-shadow: 0 2px 18px #050b;
+  text-align: left;
+  max-width: 400px;
+  font-size: 16px;
+  user-select: text;
+  line-height: 1.5;
+}
+
+.help-content h4 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.help-content ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.help-content ul li {
+  margin-bottom: 10px;
+}
+
+.help-content button {
+  padding: 8px 16px;
+  background: #c71622de;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  font-size: 16px;
+}
+
+.help-content button:hover {
+  background: #e63946;
+}
+
+/* Restart button image in game over */
+#gameOver img {
+  cursor: pointer;
+  filter: drop-shadow(0 0 4px #fff8);
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+#gameOver img:hover {
+  transform: scale(1.15);
+}
+
+/* Mobile message container */
+.ph_container {
+  color: white;
+  margin-top: 200px;
+  display: none;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .game-container {
+    display: none;
+  }
+
+  .ph_container {
+    display: block;
+  }
+}
