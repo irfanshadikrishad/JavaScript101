@@ -1,3 +1,2 @@
-## Running-Game
-A simple game made using HTML, CSS and JS.<br>
-<a href="https://reenphygeorge.github.io/running-game/">https://reenphygeorge.github.io/running-game/</a>
+This project adds a simple running game using HTML, CSS, and JavaScript.
+Players can jump over obstacles and score points. The game features basic animations and responsive controls.
