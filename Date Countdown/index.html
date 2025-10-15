@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Horizon Countdown</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Date Horizon</h1>
+    <p>Countdown to your special date!</p>
+    <input type="date" id="target-date">
+    <button id="start-btn">Start Countdown</button>
+    <div id="countdown" class="hidden">
+      <div class="time-card"><span id="days">00</span><p>Days</p></div>
+      <div class="time-card"><span id="hours">00</span><p>Hours</p></div>
+      <div class="time-card"><span id="minutes">00</span><p>Minutes</p></div>
+      <div class="time-card"><span id="seconds">00</span><p>Seconds</p></div>
+    </div>
+    <p id="message" class="hidden">Event Arrived! 🚀</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
