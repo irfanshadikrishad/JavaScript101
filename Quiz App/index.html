@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Quest Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h1>Knowledge Quest</h1>
+      <p>Embark on a journey of questions!</p>
+      <button id="start-btn">Begin Quest</button>
+    </div>
+    <div id="quiz-screen" class="hidden">
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <div class="timer-bar">
+        <div id="progress"></div>
+      </div>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+    <div id="end-screen" class="hidden">
+      <h1>Quest Complete!</h1>
+      <p>Your score: <span id="final-score"></span></p>
+      <p id="feedback"></p>
+      <div id="incorrect-answers">
+        <h3>Incorrect Answers:</h3>
+        <ul id="incorrect-list"></ul>
+      </div>
+      <button id="restart-btn">Restart Quest</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
