@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyrics Search App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lyrics Search</h1>
+    <div id="search-section">
+      <input type="text" id="artist-input" placeholder="Enter Artist">
+      <input type="text" id="song-input" placeholder="Enter Song">
+      <button id="search-btn">Search</button>
+      <button id="clear-btn">Clear</button>
+    </div>
+    <div id="recent-searches" class="hidden">
+      <h3>Recent Searches</h3>
+      <ul id="recent-list"></ul>
+    </div>
+    <div id="results" class="hidden">
+      <h2 id="result-title"></h2>
+      <pre id="lyrics"></pre>
+    </div>
+    <div id="error" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

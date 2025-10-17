@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ff69b4, #ffffff, #000000); /* Pink to white to black */
+  color: #333333; /* Dark gray for body text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333333; /* Dark gray for h1 */
+}
+
+#search-section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 40%;
+  min-width: 150px;
+  background: #fff;
+  color: #333333; /* Dark gray for input text */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#search-btn {
+  background: #d366c1;
+  color: #381515; /* Dark gray for search button text */
+}
+
+#search-btn:hover {
+  background: #902c5e;
+}
+
+#clear-btn {
+  background: #5b81d3;
+  color: #381515; /* Dark gray for clear button text */
+}
+
+#clear-btn:hover {
+  background: #2980b9;
+}
+
+#recent-searches {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+#recent-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#recent-list li {
+  cursor: pointer;
+  padding: 5px;
+  color: #333333; /* Dark gray for recent searches */
+}
+
+#recent-list li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#results {
+  margin-top: 20px;
+  text-align: left;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+#results.fade-in {
+  opacity: 1;
+}
+
+#result-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333333; /* Dark gray for result title */
+}
+
+#lyrics {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 300px;
+  overflow-y: auto;
+  color: #333333; /* Dark gray for lyrics */
+}
+
+#error {
+  margin-top: 20px;
+  color: #333333; /* Dark gray for error messages */
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 10px;
+  }
+  #search-section {
+    flex-direction: column;
+  }
+  #lyrics {
+    max-height: 200px;
+  }
+}
