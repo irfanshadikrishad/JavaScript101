@@ -64,9 +64,7 @@ A web application to search for song lyrics using an exact search or partial lyr
 
 \- Exact Search: Enter "Queen" as Artist and "Bohemian Rhapsody" as Song.
 
-\- Partial Lyrics: Enter "Mama, just killed a man" as Song (no Artist).
 
-\- Song Only: Enter "Bohemian Rhapsody" as Song (no Artist).
 
 
 
