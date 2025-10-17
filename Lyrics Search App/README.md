@@ -64,11 +64,6 @@ A web application to search for song lyrics using an exact search or partial lyr
 
 \- Exact Search: Enter "Queen" as Artist and "Bohemian Rhapsody" as Song.
 
-\- Partial Lyrics: Enter "Mama, just killed a man" as Song (no Artist).
-
-\- Song Only: Enter "Bohemian Rhapsody" as Song (no Artist).
-
-
 
 \## Project Structure
 
@@ -79,14 +74,6 @@ A web application to search for song lyrics using an exact search or partial lyr
 \- `node\_modules/`: (Auto-generated) Dependency folder (ignored by `.gitignore`).
 
 \- `dist/`: (Optional) Build output if using a bundler (ignored by `.gitignore`).
-
-
-
-\## Notes
-
-\- The app uses a mock dataset for partial lyrics due to issues with the `genius-lyrics` library in browsers.
-
-\- For real partial lyrics, consider obtaining a Genius API key and integrating it.
 
 
 
