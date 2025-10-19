@@ -1,40 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animated Neon Login</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <canvas id="bg-canvas"></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Neon Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
 
-  <!-- Login Form -->
-  <div class="neon-login-container" id="loginContainer">
-    <h2 class="neon-text">LOGIN</h2>
-    <form id="login-form">
-      <div class="neon-input-group">
-        <input type="text" id="username" required autocomplete="off" placeholder=" " />
-        <label for="username" class="neon-label">Username</label>
-      </div>
-      <div class="neon-input-group">
-        <input type="password" id="password" required autocomplete="off" placeholder=" " />
-        <label for="password" class="neon-label">Password</label>
-      </div>
-      <button type="submit" class="neon-btn">
-        <span class="btn-text">Login</span>
-        <span class="spinner"></span>
-      </button>
-      <div id="message" class="login-message"></div>
-    </form>
-  </div>
+    <!-- Login Form -->
+    <div class="neon-login-container" id="loginContainer">
+      <h2 class="neon-text">LOGIN</h2>
+      <form id="login-form">
+        <div class="neon-input-group">
+          <input
+            type="text"
+            id="username"
+            required
+            autocomplete="off"
+            placeholder=" "
+          />
+          <label for="username" class="neon-label">Username</label>
+        </div>
+        <div class="neon-input-group">
+          <input
+            type="password"
+            id="password"
+            required
+            autocomplete="off"
+            placeholder=" "
+          />
+          <label for="password" class="neon-label">Password</label>
+        </div>
+        <button type="submit" class="neon-btn">
+          <span class="btn-text">Login</span>
+          <span class="spinner"></span>
+        </button>
+        <div id="message" class="login-message"></div>
+      </form>
+    </div>
 
-  <!-- Welcome Page -->
-  <div class="welcome-container" id="welcomeContainer" style="display:none;">
-    <h1 class="welcome-text" id="welcomeMessage">Welcome!</h1>
-    <button class="neon-btn" id="logoutBtn">Logout</button>
-  </div>
+    <!-- Welcome Page -->
+    <div class="welcome-container" id="welcomeContainer" style="display: none">
+      <h1 class="welcome-text" id="welcomeMessage">Welcome!</h1>
+      <button class="neon-btn" id="logoutBtn">Logout</button>
+    </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

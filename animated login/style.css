@@ -1,41 +1,194 @@
-body, html {
-  margin:0; padding:0;
-  width:100vw; height:100vh;
-  font-family:'Montserrat',sans-serif;
-  background:#09151e; overflow:hidden;
-  display:flex; justify-content:center; align-items:center;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: #09151e;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-canvas#bg-canvas { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:0; }
+canvas#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
 
 /* --- Login Container --- */
-.neon-login-container, .welcome-container {
-  position:relative; z-index:2;
-  width:350px; background:rgba(20,25,41,0.88); border-radius:20px;
-  box-shadow:0 0 46px #14fff1bb,0 0 120px #f75fff55 inset;
-  text-align:center; padding:50px 32px; backdrop-filter:blur(7px);
-  animation:cardPulse 3s infinite alternate;
+.neon-login-container,
+.welcome-container {
+  position: relative;
+  z-index: 2;
+  width: 350px;
+  background: rgba(20, 25, 41, 0.88);
+  border-radius: 20px;
+  box-shadow:
+    0 0 46px #14fff1bb,
+    0 0 120px #f75fff55 inset;
+  text-align: center;
+  padding: 50px 32px;
+  backdrop-filter: blur(7px);
+  animation: cardPulse 3s infinite alternate;
 }
 
-@keyframes cardPulse { 0%{box-shadow:0 0 38px #14fff1bb,0 0 88px #f75fff33 inset;} 100%{box-shadow:0 0 70px #14fff1dd,0 0 180px #f75fff88 inset;} }
+@keyframes cardPulse {
+  0% {
+    box-shadow:
+      0 0 38px #14fff1bb,
+      0 0 88px #f75fff33 inset;
+  }
+  100% {
+    box-shadow:
+      0 0 70px #14fff1dd,
+      0 0 180px #f75fff88 inset;
+  }
+}
 
-.neon-text { font-size:2rem; color:#14fff1; font-weight:bold; text-shadow:0 0 19px #14fff1,0 0 36px #f75fff; margin-bottom:22px; animation:flicker 2s infinite alternate;}
-@keyframes flicker{0%,28%,72%,100%{text-shadow:0 0 24px #14fff1,0 0 44px #f75fff;}44%,55%{text-shadow:none;}}
+.neon-text {
+  font-size: 2rem;
+  color: #14fff1;
+  font-weight: bold;
+  text-shadow:
+    0 0 19px #14fff1,
+    0 0 36px #f75fff;
+  margin-bottom: 22px;
+  animation: flicker 2s infinite alternate;
+}
+@keyframes flicker {
+  0%,
+  28%,
+  72%,
+  100% {
+    text-shadow:
+      0 0 24px #14fff1,
+      0 0 44px #f75fff;
+  }
+  44%,
+  55% {
+    text-shadow: none;
+  }
+}
 
-.neon-input-group { position:relative; margin-bottom:28px; }
-.neon-input-group input { width:100%; font-size:18px; padding:13px 11px; background:transparent; border:none; border-bottom:3px solid #14fff1; color:#fff; outline:none; box-shadow:inset 0 0 13px #14fff1aa; transition:border-color 0.3s; }
-.neon-input-group input:focus { border-color:#f75fff; box-shadow:0 0 14px #f75fffdb; }
-.neon-label { position:absolute; left:11px; top:13px; color:#14fff1; font-weight:600; cursor:text; pointer-events:none; transition:all 0.3s; font-size:15px; text-shadow:0 0 15px #14fff1aa; }
-.neon-input-group input:focus ~ .neon-label, .neon-input-group input:not(:placeholder-shown) ~ .neon-label { top:-18px; font-size:12px; color:#f75fff; text-shadow:0 0 21px #f75fff; }
+.neon-input-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+.neon-input-group input {
+  width: 100%;
+  font-size: 18px;
+  padding: 13px 11px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #14fff1;
+  color: #fff;
+  outline: none;
+  box-shadow: inset 0 0 13px #14fff1aa;
+  transition: border-color 0.3s;
+}
+.neon-input-group input:focus {
+  border-color: #f75fff;
+  box-shadow: 0 0 14px #f75fffdb;
+}
+.neon-label {
+  position: absolute;
+  left: 11px;
+  top: 13px;
+  color: #14fff1;
+  font-weight: 600;
+  cursor: text;
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 15px;
+  text-shadow: 0 0 15px #14fff1aa;
+}
+.neon-input-group input:focus ~ .neon-label,
+.neon-input-group input:not(:placeholder-shown) ~ .neon-label {
+  top: -18px;
+  font-size: 12px;
+  color: #f75fff;
+  text-shadow: 0 0 21px #f75fff;
+}
 
-.neon-btn { width:100%; padding:12px 0; font-size:19px; font-weight:700; color:#14fff1; border:3px solid #14fff1; background:transparent; border-radius:12px; box-shadow:0 0 25px #14fff1, inset 0 0 42px #f75fffcc; cursor:pointer; letter-spacing:0.09em; transition:all 0.32s; }
-.neon-btn:hover { background:#14fff1; border-color:#f75fff; color:#1a2131; box-shadow:0 0 100px #f75fff,0 0 155px #14fff1 inset; transform:scale(1.06); }
-.spinner { display:none; margin-left:7px; width:21px; height:21px; border:3px solid #212333; border-top:3px solid #14fff1; border-radius:50%; animation:spin 0.85s linear infinite; }
-@keyframes spin{100%{transform:rotate(360deg);}}
+.neon-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 19px;
+  font-weight: 700;
+  color: #14fff1;
+  border: 3px solid #14fff1;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow:
+    0 0 25px #14fff1,
+    inset 0 0 42px #f75fffcc;
+  cursor: pointer;
+  letter-spacing: 0.09em;
+  transition: all 0.32s;
+}
+.neon-btn:hover {
+  background: #14fff1;
+  border-color: #f75fff;
+  color: #1a2131;
+  box-shadow:
+    0 0 100px #f75fff,
+    0 0 155px #14fff1 inset;
+  transform: scale(1.06);
+}
+.spinner {
+  display: none;
+  margin-left: 7px;
+  width: 21px;
+  height: 21px;
+  border: 3px solid #212333;
+  border-top: 3px solid #14fff1;
+  border-radius: 50%;
+  animation: spin 0.85s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-.login-message { margin-top:15px; font-weight:600; text-align:center; opacity:0; transition:opacity 0.4s ease; }
-.shake { animation:shake 0.4s; }
-@keyframes shake{0%,100%{transform:translateX(0);}20%,60%{transform:translateX(-8px);}40%,80%{transform:translateX(8px);}}
+.login-message {
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.shake {
+  animation: shake 0.4s;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-8px);
+  }
+  40%,
+  80% {
+    transform: translateX(8px);
+  }
+}
 
 /* Welcome Page */
-.welcome-text { font-size:2.2rem; color:#14fff1; text-shadow:0 0 20px #14fff1,0 0 40px #f75fff; animation:flicker 2s infinite alternate; margin-bottom:20px; }
+.welcome-text {
+  font-size: 2.2rem;
+  color: #14fff1;
+  text-shadow:
+    0 0 20px #14fff1,
+    0 0 40px #f75fff;
+  animation: flicker 2s infinite alternate;
+  margin-bottom: 20px;
+}

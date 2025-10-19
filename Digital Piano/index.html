@@ -1,62 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Piano</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <div class="intro-container">
-      <h1>🎹 Smart Piano</h1>
-      <h3>Visualizer + Learning + Recording</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Piano</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro-container">
+        <h1>🎹 Smart Piano</h1>
+        <h3>Visualizer + Learning + Recording</h3>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="toggle-learning">Learning Mode</button>
+        <button id="start-record">Start Recording</button>
+        <button id="stop-record" disabled>Stop Recording</button>
+        <button id="play-recording" disabled>Play Recording</button>
+        <a id="download" style="display: none">Download Recording</a>
+      </div>
+
+      <!-- Piano (17 keys only) -->
+      <div class="piano-container">
+        <ul class="piano-keys-list">
+          <li class="piano-keys white-key" data-key="01" data-note="A"></li>
+          <li class="piano-keys black-key" data-key="02" data-note="D"></li>
+          <li class="piano-keys white-key" data-key="03" data-note="E"></li>
+          <li class="piano-keys black-key" data-key="04" data-note="F"></li>
+          <li class="piano-keys white-key" data-key="05" data-note="G"></li>
+          <li class="piano-keys black-key" data-key="06" data-note="H"></li>
+          <li class="piano-keys white-key" data-key="07" data-note="J"></li>
+          <li class="piano-keys black-key" data-key="08" data-note="K"></li>
+          <li class="piano-keys white-key" data-key="09" data-note="L"></li>
+          <li class="piano-keys black-key" data-key="10" data-note="O"></li>
+          <li class="piano-keys white-key" data-key="11" data-note="P"></li>
+          <li class="piano-keys black-key" data-key="12" data-note="S"></li>
+          <li class="piano-keys white-key" data-key="13" data-note="T"></li>
+          <li class="piano-keys black-key" data-key="14" data-note="U"></li>
+          <li class="piano-keys white-key" data-key="15" data-note="W"></li>
+          <li class="piano-keys black-key" data-key="16" data-note="Y"></li>
+          <li
+            class="piano-keys white-key"
+            data-key="17"
+            data-note="; (extra)"
+          ></li>
+        </ul>
+      </div>
+
+      <!-- Learning mode resources -->
+      <div id="learning-resources" style="display: none; margin-top: 20px">
+        <h3>🎓 Beginner Piano Resources</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.pianote.com/blog/beginner-piano-songs/"
+              target="_blank"
+              >Beginner Songs</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.musicnotes.com/blog/2017/06/16/how-to-read-sheet-music/"
+              target="_blank"
+              >How to Read Sheet Music</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=vphWgqbF-AM"
+              target="_blank"
+              >YouTube Piano Lessons</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Controls -->
-    <div class="controls">
-      <button id="toggle-learning">Learning Mode</button>
-      <button id="start-record">Start Recording</button>
-      <button id="stop-record" disabled>Stop Recording</button>
-      <button id="play-recording" disabled>Play Recording</button>
-      <a id="download" style="display:none;">Download Recording</a>
-    </div>
-
-    <!-- Piano (17 keys only) -->
-    <div class="piano-container">
-      <ul class="piano-keys-list">
-        <li class="piano-keys white-key" data-key="01" data-note="A"></li>
-        <li class="piano-keys black-key" data-key="02" data-note="D"></li>
-        <li class="piano-keys white-key" data-key="03" data-note="E"></li>
-        <li class="piano-keys black-key" data-key="04" data-note="F"></li>
-        <li class="piano-keys white-key" data-key="05" data-note="G"></li>
-        <li class="piano-keys black-key" data-key="06" data-note="H"></li>
-        <li class="piano-keys white-key" data-key="07" data-note="J"></li>
-        <li class="piano-keys black-key" data-key="08" data-note="K"></li>
-        <li class="piano-keys white-key" data-key="09" data-note="L"></li>
-        <li class="piano-keys black-key" data-key="10" data-note="O"></li>
-        <li class="piano-keys white-key" data-key="11" data-note="P"></li>
-        <li class="piano-keys black-key" data-key="12" data-note="S"></li>
-        <li class="piano-keys white-key" data-key="13" data-note="T"></li>
-        <li class="piano-keys black-key" data-key="14" data-note="U"></li>
-        <li class="piano-keys white-key" data-key="15" data-note="W"></li>
-        <li class="piano-keys black-key" data-key="16" data-note="Y"></li>
-        <li class="piano-keys white-key" data-key="17" data-note="; (extra)"></li>
-      </ul>
-    </div>
-
-    <!-- Learning mode resources -->
-    <div id="learning-resources" style="display:none;margin-top:20px;">
-      <h3>🎓 Beginner Piano Resources</h3>
-      <ul>
-        <li><a href="https://www.pianote.com/blog/beginner-piano-songs/" target="_blank">Beginner Songs</a></li>
-        <li><a href="https://www.musicnotes.com/blog/2017/06/16/how-to-read-sheet-music/" target="_blank">How to Read Sheet Music</a></li>
-        <li><a href="https://www.youtube.com/watch?v=vphWgqbF-AM" target="_blank">YouTube Piano Lessons</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

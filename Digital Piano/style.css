@@ -13,7 +13,8 @@ body {
   text-align: center;
 }
 
-.controls button, .controls a {
+.controls button,
+.controls a {
   margin: 5px;
   padding: 8px 15px;
   font-size: 14px;
@@ -24,7 +25,7 @@ body {
 }
 .controls a {
   text-decoration: none;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 

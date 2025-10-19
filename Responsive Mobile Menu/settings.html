@@ -1,52 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Settings</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-
-  <!-- Sidebar (same as dashboard) -->
-  <div class="sidebar" id="sidebar">
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="dashboard.html">Home</a></li>
-      <li><a href="scanner.html">Scan Plant</a></li>
-      <li><a href="details.html">Plant Details</a></li>
-      <li><a href="settings.html" id="settings-btn">Settings</a></li>
-      <li><a href="#" id="logout-btn">Logout</a></li>
-    </ul>
-  </div>
-
-  <!-- Navbar -->
-  <div class="navbar">
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <h2>Settings</h2>
-  </div>
-
-  <!-- Settings Content -->
-  <div class="settings-page">
-    <h3>⚙️ User Settings</h3>
-
-    <div class="settings-group">
-      <label class="switch-row">
-        <span>Dark Mode</span>
-        <input type="checkbox" id="darkModeToggle">
-      </label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar (same as dashboard) -->
+    <div class="sidebar" id="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="scanner.html">Scan Plant</a></li>
+        <li><a href="details.html">Plant Details</a></li>
+        <li><a href="settings.html" id="settings-btn">Settings</a></li>
+        <li><a href="#" id="logout-btn">Logout</a></li>
+      </ul>
     </div>
 
-    <div class="settings-group">
-      <label class="switch-row">
-        <span>Notifications</span>
-        <input type="checkbox" id="notificationsToggle" checked>
-      </label>
+    <!-- Navbar -->
+    <div class="navbar">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <h2>Settings</h2>
     </div>
 
-    <button class="btn" id="saveSettings">Save Settings</button>
-  </div>
+    <!-- Settings Content -->
+    <div class="settings-page">
+      <h3>⚙️ User Settings</h3>
 
-  <script src="script.js"></script>
-</body>
+      <div class="settings-group">
+        <label class="switch-row">
+          <span>Dark Mode</span>
+          <input type="checkbox" id="darkModeToggle" />
+        </label>
+      </div>
+
+      <div class="settings-group">
+        <label class="switch-row">
+          <span>Notifications</span>
+          <input type="checkbox" id="notificationsToggle" checked />
+        </label>
+      </div>
+
+      <button class="btn" id="saveSettings">Save Settings</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

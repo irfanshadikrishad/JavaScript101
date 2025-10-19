@@ -6,11 +6,11 @@
 }
 
 body {
-  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/303/295/small/mountains-background-game-vector.jpg');
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/303/295/small/mountains-background-game-vector.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
   height: 100vh;
   color: #f0f0f0;
@@ -33,7 +33,7 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   visibility: hidden;
   z-index: 100;
   display: flex;
@@ -136,7 +136,9 @@ body {
   border: 2px solid #f0f0f0;
   color: #f0f0f0;
   border-radius: 18px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   user-select: none;
   min-width: 70px;
   height: 32px;
