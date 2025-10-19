@@ -18,7 +18,7 @@ function populateVoices() {
   voices = this.getVoices();
   voicesDropdown.innerHTML = voices.map(
     (voice) =>
-      `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`
+      `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`,
   );
 }
 function setVoice() {

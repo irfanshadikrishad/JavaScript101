@@ -9,7 +9,7 @@ body {
     radial-gradient(circle at 75% 75%, #d93adb66, #351939 70%);
   background-blend-mode: screen;
   color: #f0d9ac;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 2rem;
   display: flex;
@@ -27,8 +27,7 @@ body {
   padding: 1.5rem;
   background: rgba(20, 12, 5, 0.65);
   border-radius: 20px;
-  box-shadow:
-    0 0 45px #b58e37bb inset;
+  box-shadow: 0 0 45px #b58e37bb inset;
   backdrop-filter: blur(6px);
   border: 2px solid #b99548cc;
   position: relative;
@@ -39,8 +38,9 @@ body {
 .accordion {
   background: linear-gradient(145deg, #472f10, #2f200a);
   border-radius: 16px;
-  box-shadow: 5px 5px 15px #0f0b08cc,
-              inset 0 0 15px #b3863e77;
+  box-shadow:
+    5px 5px 15px #0f0b08cc,
+    inset 0 0 15px #b3863e77;
   overflow: hidden;
   user-select: none;
   border: 2px solid #b99548cc;
@@ -49,8 +49,9 @@ body {
   z-index: 10;
 }
 .accordion:hover {
-  box-shadow: 7px 7px 25px #f7d872cc,
-              inset 0 0 35px #f9d559bb;
+  box-shadow:
+    7px 7px 25px #f7d872cc,
+    inset 0 0 35px #f9d559bb;
 }
 
 .accordion-header {
@@ -74,16 +75,19 @@ body {
   height: clamp(60px, 8vw, 130px);
   border-radius: 14px;
   object-fit: cover;
-  box-shadow: 0 0 12px #dbb35a, 0 0 35px #d3a834bb inset;
-  -webkit-box-reflect:
-    below 5px
+  box-shadow:
+    0 0 12px #dbb35a,
+    0 0 35px #d3a834bb inset;
+  -webkit-box-reflect: below 5px
     linear-gradient(to bottom, rgba(255, 255, 255, 0.22), transparent 70%);
   transition: box-shadow 0.5s ease;
   flex-shrink: 0;
 }
 
 .accordion:hover .mirrored-img {
-  box-shadow: 0 0 20px #ffea72, 0 0 55px #fff05caa inset;
+  box-shadow:
+    0 0 20px #ffea72,
+    0 0 55px #fff05caa inset;
 }
 
 .accordion-headline {
@@ -132,7 +136,9 @@ body {
   color: #ffe699;
   font-size: clamp(1rem, 0.75vw + 0.8rem, 1.25rem);
   line-height: 1.6;
-  transition: max-height 0.55s cubic-bezier(0.35, 0, 0.25, 1), padding 0.45s ease;
+  transition:
+    max-height 0.55s cubic-bezier(0.35, 0, 0.25, 1),
+    padding 0.45s ease;
   user-select: text;
   font-style: italic;
   font-weight: 600;
@@ -145,16 +151,29 @@ body {
 }
 
 @keyframes accordionBounce {
-  0% { transform: scaleY(0.87); opacity: 0.75;}
-  60% { transform: scaleY(1.1); opacity: 1;}
-  80% { transform: scaleY(0.95);}
-  100% { transform: scaleY(1);}
+  0% {
+    transform: scaleY(0.87);
+    opacity: 0.75;
+  }
+  60% {
+    transform: scaleY(1.1);
+    opacity: 1;
+  }
+  80% {
+    transform: scaleY(0.95);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 /* Blurred background image container */
 .bg-blur-container {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
   border-radius: 16px;
   opacity: 0;

@@ -1,16 +1,17 @@
 // Scroll Meter
-window.onscroll = ()=> {
-    let pos = document.documentElement.scrollTop;
-    let calc_height = document.documentElement.scrollHeight - 
-        document.documentElement.clientHeight;
-    let scroll = pos * 100 / calc_height;
+window.onscroll = () => {
+  let pos = document.documentElement.scrollTop;
+  let calc_height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scroll = (pos * 100) / calc_height;
 
-    document.getElementById("scroll-in").style.height = scroll + "%";
-}
+  document.getElementById("scroll-in").style.height = scroll + "%";
+};
 
 // Scroll to top
-function scrollToTop(){
-    window.scrollTo(0, 0);
+function scrollToTop() {
+  window.scrollTo(0, 0);
 }
 
 // Highlight Color

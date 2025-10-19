@@ -1,34 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plant Scanner</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class="phone-screen">
-    <!-- Header -->
-    <header>
-      <a href="dashboard.html" class="back-btn">←</a>
-     <h1 style="text-align:center; margin:0;">Scan Plant</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Scanner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="phone-screen">
+      <!-- Header -->
+      <header>
+        <a href="dashboard.html" class="back-btn">←</a>
+        <h1 style="text-align: center; margin: 0">Scan Plant</h1>
+      </header>
 
+      <!-- Plant Image with Scanner -->
+      <div class="scanner-area">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/the-sill-alocasia-tiny-dancer-medium-grant-cream-variant-67645543c9f48.jpeg?crop=1.00xw:0.774xh;0,0.0553xh&resize=980:*"
+          alt="Plant"
+          class="plant-img"
+        />
+        <div class="scanner-frame"></div>
+        <div class="scanner-line"></div>
+      </div>
 
-    </header>
-
-    <!-- Plant Image with Scanner -->
-    <div class="scanner-area">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/the-sill-alocasia-tiny-dancer-medium-grant-cream-variant-67645543c9f48.jpeg?crop=1.00xw:0.774xh;0,0.0553xh&resize=980:*" alt="Plant" class="plant-img">
-      <div class="scanner-frame"></div>
-      <div class="scanner-line"></div>
+      <!-- Bottom Buttons -->
+      <footer>
+        <button class="circle-btn">📷</button>
+        <button class="circle-btn">⚡</button>
+      </footer>
     </div>
-
-    <!-- Bottom Buttons -->
-    <footer>
-      <button class="circle-btn">📷</button>
-      <button class="circle-btn">⚡</button>
-    </footer>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

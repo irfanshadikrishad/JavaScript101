@@ -1,5 +1,5 @@
-const keys = document.querySelectorAll('.piano-keys');
-const downloadBtn = document.getElementById('download');
+const keys = document.querySelectorAll(".piano-keys");
+const downloadBtn = document.getElementById("download");
 let learningMode = false;
 
 let recording = false;
@@ -8,11 +8,23 @@ let recordStart = 0;
 let renderedBlob = null;
 
 const soundMap = {
-  "01": "a.wav","02": "d.wav","03": "e.wav","04": "f.wav",
-  "05": "g.wav","06": "h.wav","07": "j.wav","08": "k.wav",
-  "09": "l.wav","10": "o.wav","11": "p.wav","12": "s.wav",
-  "13": "t.wav","14": "u.wav","15": "w.wav","16": "y.wav",
-  "17": ";.wav"
+  "01": "a.wav",
+  "02": "d.wav",
+  "03": "e.wav",
+  "04": "f.wav",
+  "05": "g.wav",
+  "06": "h.wav",
+  "07": "j.wav",
+  "08": "k.wav",
+  "09": "l.wav",
+  10: "o.wav",
+  11: "p.wav",
+  12: "s.wav",
+  13: "t.wav",
+  14: "u.wav",
+  15: "w.wav",
+  16: "y.wav",
+  17: ";.wav",
 };
 
 function playSound(keyElement) {
@@ -31,35 +43,37 @@ function playSound(keyElement) {
   }
 }
 
-keys.forEach(key => key.addEventListener('click', () => playSound(key)));
+keys.forEach((key) => key.addEventListener("click", () => playSound(key)));
 
 // learning toggle
-document.getElementById('toggle-learning')?.addEventListener('click', () => {
+document.getElementById("toggle-learning")?.addEventListener("click", () => {
   learningMode = !learningMode;
-  document.querySelector('.piano-keys-list').classList.toggle('learning-mode', learningMode);
-  const lr = document.getElementById('learning-resources');
-  if (lr) lr.style.display = learningMode ? 'block' : 'none';
+  document
+    .querySelector(".piano-keys-list")
+    .classList.toggle("learning-mode", learningMode);
+  const lr = document.getElementById("learning-resources");
+  if (lr) lr.style.display = learningMode ? "block" : "none";
 });
 
 // start record
-document.getElementById('start-record').addEventListener('click', () => {
+document.getElementById("start-record").addEventListener("click", () => {
   recordedNotes = [];
   recording = true;
   recordStart = Date.now();
   renderedBlob = null;
 
-  document.getElementById('start-record').disabled = true;
-  document.getElementById('stop-record').disabled = false;
-  document.getElementById('play-recording').disabled = true;
+  document.getElementById("start-record").disabled = true;
+  document.getElementById("stop-record").disabled = false;
+  document.getElementById("play-recording").disabled = true;
   downloadBtn.style.display = "none";
   alert("Recording started...");
 });
 
 // stop record (render offline)
-document.getElementById('stop-record').addEventListener('click', async () => {
+document.getElementById("stop-record").addEventListener("click", async () => {
   recording = false;
-  document.getElementById('start-record').disabled = false;
-  document.getElementById('stop-record').disabled = true;
+  document.getElementById("start-record").disabled = false;
+  document.getElementById("stop-record").disabled = true;
 
   if (recordedNotes.length === 0) {
     alert("Nothing recorded");
@@ -68,7 +82,7 @@ document.getElementById('stop-record').addEventListener('click', async () => {
 
   try {
     // find length in seconds
-    const lastTime = Math.max(...recordedNotes.map(n => n.time));
+    const lastTime = Math.max(...recordedNotes.map((n) => n.time));
     const duration = (lastTime + 2000) / 1000; // seconds
 
     const offlineCtx = new OfflineAudioContext(2, 44100 * duration, 44100);
@@ -79,7 +93,7 @@ document.getElementById('stop-record').addEventListener('click', async () => {
       if (!file) continue;
       const resp = await fetch(`./KeySounds/${file}`);
       if (!resp.ok) {
-        console.error('Missing file', file);
+        console.error("Missing file", file);
         continue;
       }
       const arrayBuf = await resp.arrayBuffer();
@@ -95,10 +109,10 @@ document.getElementById('stop-record').addEventListener('click', async () => {
 
     // enable play & download
     const url = URL.createObjectURL(renderedBlob);
-    document.getElementById('play-recording').disabled = false;
+    document.getElementById("play-recording").disabled = false;
     downloadBtn.href = url;
-    downloadBtn.download = 'piano_recording.wav';
-    downloadBtn.style.display = 'inline-block';
+    downloadBtn.download = "piano_recording.wav";
+    downloadBtn.style.display = "inline-block";
     alert("Recording stopped. You can now play or download it.");
   } catch (err) {
     console.error(err);
@@ -107,7 +121,7 @@ document.getElementById('stop-record').addEventListener('click', async () => {
 });
 
 // play recorded audio from blob
-document.getElementById('play-recording').addEventListener('click', () => {
+document.getElementById("play-recording").addEventListener("click", () => {
   if (!renderedBlob) return alert("No recording available");
 
   // play the rendered audio
@@ -115,12 +129,14 @@ document.getElementById('play-recording').addEventListener('click', () => {
   audio.play();
 
   // flash keys at recorded times
-  recordedNotes.forEach(note => {
+  recordedNotes.forEach((note) => {
     setTimeout(() => {
-      const keyElement = document.querySelector(`.piano-keys[data-key="${note.key}"]`);
+      const keyElement = document.querySelector(
+        `.piano-keys[data-key="${note.key}"]`,
+      );
       if (keyElement) {
-        keyElement.classList.add('active');
-        setTimeout(() => keyElement.classList.remove('active'), 200);
+        keyElement.classList.add("active");
+        setTimeout(() => keyElement.classList.remove("active"), 200);
       }
     }, note.time);
   });
@@ -129,15 +145,21 @@ document.getElementById('play-recording').addEventListener('click', () => {
 // helper: convert AudioBuffer to WAV Blob
 function bufferToWave(abuffer, len) {
   const numOfChan = abuffer.numberOfChannels,
-        length = len * numOfChan * 2 + 44,
-        buffer = new ArrayBuffer(length),
-        view = new DataView(buffer),
-        channels = [],
-        sampleRate = abuffer.sampleRate;
+    length = len * numOfChan * 2 + 44,
+    buffer = new ArrayBuffer(length),
+    view = new DataView(buffer),
+    channels = [],
+    sampleRate = abuffer.sampleRate;
 
   let offset = 0;
-  function setUint16(data) { view.setUint16(offset, data, true); offset += 2; }
-  function setUint32(data) { view.setUint32(offset, data, true); offset += 4; }
+  function setUint16(data) {
+    view.setUint16(offset, data, true);
+    offset += 2;
+  }
+  function setUint32(data) {
+    view.setUint32(offset, data, true);
+    offset += 4;
+  }
 
   // RIFF chunk descriptor
   setUint32(0x46464952); // "RIFF"
@@ -158,8 +180,7 @@ function bufferToWave(abuffer, len) {
   setUint32(0x61746164); // "data"
   setUint32(length - offset - 4);
 
-  for (let i = 0; i < numOfChan; i++)
-    channels.push(abuffer.getChannelData(i));
+  for (let i = 0; i < numOfChan; i++) channels.push(abuffer.getChannelData(i));
 
   let interleaved = new Float32Array(len * numOfChan);
   for (let i = 0; i < len; i++) {
@@ -172,7 +193,7 @@ function bufferToWave(abuffer, len) {
   const volume = 1;
   for (let i = 0; i < interleaved.length; i++, index += 2) {
     let sample = Math.max(-1, Math.min(1, interleaved[i] * volume));
-    view.setInt16(index, sample < 0 ? sample * 0x8000 : sample * 0x7FFF, true);
+    view.setInt16(index, sample < 0 ? sample * 0x8000 : sample * 0x7fff, true);
   }
 
   return new Blob([buffer], { type: "audio/wav" });

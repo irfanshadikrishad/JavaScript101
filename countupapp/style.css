@@ -1,49 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    color: rgb(50, 50, 50);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(50, 50, 50);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url(img/round.webp);
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(img/round.webp);
 }
-#counter{
-    font-size: 5rem;
+#counter {
+  font-size: 5rem;
 }
-.counte{
-    display: flex;
+.counte {
+  display: flex;
 }
-.m{
-    font-size: 5rem;
+.m {
+  font-size: 5rem;
 }
-#btn{
-    width: 10rem;
-    height: 2.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: tomato;
-    color: lavender;
-    border: 3px solid lavender;
+#btn {
+  width: 10rem;
+  height: 2.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: tomato;
+  color: lavender;
+  border: 3px solid lavender;
 }
-.whole{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.whole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.fa-github, .fa-facebook, .fa-youtube, .fa-linkedin, .fa-twitter{
-    color: rgb(50, 50, 50);
-    font-size: 1.3rem;
-    margin-right: 8px;
-    cursor: pointer;
+.fa-github,
+.fa-facebook,
+.fa-youtube,
+.fa-linkedin,
+.fa-twitter {
+  color: rgb(50, 50, 50);
+  font-size: 1.3rem;
+  margin-right: 8px;
+  cursor: pointer;
 }
-.fa-github:hover, .fa-facebook:hover, .fa-youtube:hover, .fa-linkedin:hover, .fa-twitter:hover{
-    color: rgb(117, 117, 117);
+.fa-github:hover,
+.fa-facebook:hover,
+.fa-youtube:hover,
+.fa-linkedin:hover,
+.fa-twitter:hover {
+  color: rgb(117, 117, 117);
 }
-.thecredit{
-    margin-top: 15px;
+.thecredit {
+  margin-top: 15px;
 }

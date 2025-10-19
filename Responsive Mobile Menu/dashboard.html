@@ -1,90 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plants Dashboard</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-
-  <!-- Sidebar -->
-  <div class="sidebar" id="sidebar">
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="dashboard.html">Home</a></li>
-      <li><a href="scanner.html">Scan Plant</a></li>
-      <li><a href="details.html">Plant Details</a></li>
-      <li><a href="settings.html" id="settings-btn">Settings</a></li>
-      <li><a href="#" id="logout-btn">Logout</a></li>
-    </ul>
-  </div>
-
-  <!-- Navbar -->
-  <div class="navbar">
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <h2>Hi Gargi!</h2>
-  </div>
-
-  <!-- Dashboard Content -->
-  <div class="dashboard">
-    <div class="welcome">
-      <p>Good morning</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plants Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="scanner.html">Scan Plant</a></li>
+        <li><a href="details.html">Plant Details</a></li>
+        <li><a href="settings.html" id="settings-btn">Settings</a></li>
+        <li><a href="#" id="logout-btn">Logout</a></li>
+      </ul>
     </div>
 
-    <!-- Tabs -->
-    <div class="tabs">
-      <button class="tab active">Indoor</button>
-      <button class="tab">Outdoor</button>
-      <button class="tab">Both</button>
+    <!-- Navbar -->
+    <div class="navbar">
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <h2>Hi Gargi!</h2>
     </div>
 
-    <!-- My Plants -->
-    <h3 class="section-title">My Plants</h3>
-    <div class="plant-cards">
-      <div class="plant-card">
-        <img src="https://www.ugaoo.com/cdn/shop/files/1_1030e79a-8e04-4c58-9096-42690b55084c.jpg?v=1741698714&width=1000" alt="Plant">
-        <h4>Ficus</h4>
-        <div class="info">
-          <span>Sunny</span>
-          <span>90</span>
+    <!-- Dashboard Content -->
+    <div class="dashboard">
+      <div class="welcome">
+        <p>Good morning</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active">Indoor</button>
+        <button class="tab">Outdoor</button>
+        <button class="tab">Both</button>
+      </div>
+
+      <!-- My Plants -->
+      <h3 class="section-title">My Plants</h3>
+      <div class="plant-cards">
+        <div class="plant-card">
+          <img
+            src="https://www.ugaoo.com/cdn/shop/files/1_1030e79a-8e04-4c58-9096-42690b55084c.jpg?v=1741698714&width=1000"
+            alt="Plant"
+          />
+          <h4>Ficus</h4>
+          <div class="info">
+            <span>Sunny</span>
+            <span>90</span>
+          </div>
+        </div>
+
+        <div class="plant-card">
+          <img
+            src="https://m.media-amazon.com/images/I/610nFUGS5TL._SX679_.jpg"
+            alt="Plant"
+          />
+          <h4>Monstera</h4>
+          <div class="info">
+            <span>Sunny</span>
+            <span>125%</span>
+          </div>
         </div>
       </div>
 
-      <div class="plant-card">
-        <img src="https://m.media-amazon.com/images/I/610nFUGS5TL._SX679_.jpg" alt="Plant">
-        <h4>Monstera</h4>
-        <div class="info">
-          <span>Sunny</span>
-          <span>125%</span>
+      <!-- Related Plants -->
+      <div class="related-plants">
+        <h3 class="section-title">Related Plants</h3>
+
+        <div class="related-item">
+          <div class="related-info">
+            <h4>Alberiya Garden Plant</h4>
+            <p>Plants are predominantly...</p>
+            <p class="price">£25.55</p>
+          </div>
+          <img
+            src="https://m.media-amazon.com/images/I/71mV9cKCKAL._SL1500_.jpg"
+            alt="Plant"
+          />
+        </div>
+
+        <div class="related-item">
+          <div class="related-info">
+            <h4>Peace Lily</h4>
+            <p>Beautiful indoor plant</p>
+            <p class="price">£18.75</p>
+          </div>
+          <img
+            src="https://m.media-amazon.com/images/I/51TuiwzUsuL.jpg"
+            alt="Plant"
+          />
         </div>
       </div>
     </div>
 
-    <!-- Related Plants -->
-    <div class="related-plants">
-      <h3 class="section-title">Related Plants</h3>
-      
-      <div class="related-item">
-        <div class="related-info">
-          <h4>Alberiya Garden Plant</h4>
-          <p>Plants are predominantly...</p>
-          <p class="price">£25.55</p>
-        </div>
-        <img src="https://m.media-amazon.com/images/I/71mV9cKCKAL._SL1500_.jpg" alt="Plant">
-      </div>
-
-      <div class="related-item">
-        <div class="related-info">
-          <h4>Peace Lily</h4>
-          <p>Beautiful indoor plant</p>
-          <p class="price">£18.75</p>
-        </div>
-        <img src="https://m.media-amazon.com/images/I/51TuiwzUsuL.jpg" alt="Plant">
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
