@@ -7,7 +7,7 @@ const jmp = new Audio("Resources/Audio/jump.wav");
 
 const obs = document.getElementById('obs');
 const obs_image = [
-  'C:\Users\georg\OneDrive\Desktop\Running game\Running game\Resources\Obstacles\ob2.jpeg',
+  'Resources/Obstacles/ob2.jpeg',
   'Resources/Obstacles/meet.png',
   'Resources/Obstacles/psd.png'
 ];
