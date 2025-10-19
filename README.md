@@ -42,33 +42,33 @@ All the JavaScript projects i did or wanted to do. Any contribution is appreciat
 - [x] [Cursor Animation on MouseMove.](https://eptsy.github.io/custom-cursor-tracker/) 🎉
 - [x] [JavaScript BMI Calculator.](https://eptsy.github.io/bmi-calculator/) :tada:
 - [x] [Testimonial Slider](https://eptsy.github.io/owlcarousel/) :tada:
-- [ ] Lyrics Search App
-- [ ] Quiz App [(Example)](https://uttamsaha.github.io/quiz-app)
+- [x] Lyrics Search App @Clarissagit
+- [x] Quiz App @Clarissagit
 - [ ] List Search Project
-- [ ] Date Countdown
+- [x] Date Countdown @Clarissagit
 - [ ] Tip Calculator
 - [ ] Smooth Scroll Effect
 - [ ] Active Menu Switcher
-- [ ] Responsive Mobile Menu with Submenu
+- [x] Responsive Mobile Menu with Submenu @SaniaCorreia30
 - [ ] Newsletter Form on Scroll
-- [x] [Password Generator](./password-generator) :tada:
+- [x] [Password Generator](./password-generator) :tada: @vq6s
 - [ ] Todo App with Local Storage
 - [ ] Notes App
 - [ ] Calculator
 - [ ] Weight Converter
-- [ ] Running Game
-- [ ] Accordion
+- [x] Running Game @GeorgiaCorreia
+- [x] Accordion @GeorgiaCorreia
 - [ ] Random Joke Generator
-- [ ] Wikipedia Search App
+- [x] Wikipedia Search App @SaniaCorreia30
 - [ ] Image Slider
 - [ ] Product Filter
 - [ ] Product Carousel Slider
 - [ ] Vertical Tabs
-- [ ] Digital Piano
+- [x] Digital Piano @SaniaCorreia30
 - [ ] Form Validation
 - [x] [Password Visibility Toggle](./password-visibility-toggle) :tada:
 - [ ] Password Strength Indicator
-- [ ] Animated Login UI
+- [x] Animated Login UI @GeorgiaCorreia
 - [ ] Animated Search Bar
 - [ ] Udemy User Avatar Menu
 - [ ] Currency Converter
@@ -104,7 +104,7 @@ All the JavaScript projects i did or wanted to do. Any contribution is appreciat
 - [ ] Web Scrapping.
 - [ ] Captcha Generator.
 - [ ] CSS + JS Clock
-- [x] [Hold Shift to Check Multiple Checkboxes](./Hold Shift to Check Multiple Checkboxes) :tada:
+- [x] [Hold Shift to Check Multiple Checkboxes](./Hold Shift to Check Multiple Checkboxes) :tada: @vq6s
 - [ ] Custom HTML5 Video Player
 - [ ] Key Sequence Detection (KONAMI CODE)
 - [ ] Slide In on Scroll
