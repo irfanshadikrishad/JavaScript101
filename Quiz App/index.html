@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen">
+            <h1>Knowledge Quest</h1>
+            <p>Embark on a journey of questions!</p>
+            <button id="start-btn">Begin Quest</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen hidden">
+            <div id="score">Score: 0</div>
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div id="timer-slider">
+                <div id="timer-fill"></div>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" class="screen hidden">
+            <h1>Quest Complete!</h1>
+            <div id="final-score"></div>
+            <div id="feedback"></div>
+            <div id="incorrect-list"></div>
+            <button id="restart-btn">Restart Quest</button>
+            <canvas id="confetti-canvas"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
